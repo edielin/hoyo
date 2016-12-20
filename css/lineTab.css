@@ -1,0 +1,49 @@
+/*.bbb{
+	display: inline-block;
+}*/
+/*.box{
+	margin-left: 50px;
+	position: relative;
+}*/
+
+/* 上面可忽略,代表tab的上層要relative */
+
+
+
+
+/* 以下才是主體 */
+
+.line_tab{
+	position: absolute;
+	width: 70px;
+	height: 25px;
+	top: 15px;
+	left: -7px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	line-height: 25px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+}
+
+.line_tab:before{
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	z-index: -1;
+	width: 0;height: 0;
+	border:7px solid transparent;
+}
+
+.ali_tab{background-color: #aa3535;}
+.ali_tab:before{border-right: 7px solid #aa8686;}
+
+.gigi_tab{background-color: #075f9b;}
+.gigi_tab:before{border-right: 7px solid #6695aa;}
+
+.neiWan_tab{background-color: #298736;}
+.neiWan_tab:before{border-right: 7px solid #758e76;}
+
+.pingC_tab{background-color: #ce631b;}
+.pingC_tab:before{border-right: 7px solid #cca183;}

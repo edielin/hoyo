@@ -1,0 +1,176 @@
+
+/*---------------pSequence排序--------------*/
+.ch{ 
+    font-family: 'Microsoft Jhenghei', sans-serif;
+    letter-spacing: 1px;
+} 
+/*option{
+    outline: 1px solid #f00;
+    text-align: center;
+}*/
+.psequence{
+    border-bottom:2px solid #ccc;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+}
+
+.psequence .pseItem{
+    display: inline-block;
+    font-size: 0;
+}
+.pseItem div{
+    display: inline-block;
+}
+.pseItem div a{
+    font-size: 1rem;
+    list-style: none;
+    display: block;
+    color:#999;
+    padding:8px 5px;
+    margin-bottom:-9px;
+    text-decoration:none;
+}
+.pseItem div a:hover{
+    color:#666;
+    border-bottom:2px solid #666;
+}
+.pseItem div a.pseIChecked{
+    color:#E43B36;
+    border-bottom: 2px solid #E43B36;
+}
+.select_icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;left: -2px;
+}
+/*------------pconditionBar區塊-----------------*/
+.pconditionBar{
+    margin-bottom: 25px;
+}
+/*------------------下拉式選單-----------------*/
+/*第一個篩選器*/
+.filterFirst{
+    float: left;
+}
+/*第二個之後得篩選器*/
+.filterNth{
+    float: left;
+    margin-left: 5px;
+}
+/*最後一個*/
+.filterLast{
+    float:right;
+}
+
+.pdropdown:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+
+.drowStyle{
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    height:30px;
+    width:150px;
+    padding:0 0 0 30px;
+    text-align-last:center;
+    background-color: #00b5ad;
+    border:none;
+    outline: none;
+    color:#fff;
+
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+/*------------------psearch搜尋----------*/
+.psearch{
+    height:30px;
+    position: relative;
+}
+.searchStyle{
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    height:30px;
+    width: 150px;
+    vertical-align: middle;
+    padding:0px 10px;
+    box-sizing: border-box;
+    color:#000;
+    transition: .5s;
+}
+.searchStyle:focus{
+    outline: none;
+    border: 1px solid #049e92;
+    width:180px;
+}
+.searchBtn{
+    font-size: 1rem;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #fff;
+    height:30px;
+    width: 30px;
+    background-image: url(../icon/search_btn.png);
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    /*border-radius: 0 5px 5px 0;*/
+}
+.searchBtn:focus{
+    outline: none;
+}
+
+
+/*------------rwd------------*/
+@media screen and (max-width: 479px){
+/*------------------下拉式選單-----------------*/
+.drowStyle,
+.filterFirst,
+.filterNth{
+    width: 100%;
+    margin-bottom: 5px;
+ }
+.filterNth{
+    margin-left: 0;
+}
+.psearch{
+    width: 100%;
+}
+.searchStyle,
+.searchStyle:focus{
+    width: calc(100% - 30px);
+}
+
+/*searchBAR*/
+
+
+}       
+
+@media screen and (min-width: 480px){
+/*------------------下拉式選單-----------------*/
+
+
+/*searchBAR*/
+
+
+}
+
+@media screen and (min-width: 767px){
+/*------------------下拉式選單-----------------*/
+
+/*searchBAR*/
+
+}
+@media screen and (min-width: 970px){
+
+}
+
+@media screen and (min-width: 1170px){
+
+}

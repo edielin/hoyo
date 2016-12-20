@@ -1,0 +1,512 @@
+
+.biSearch{
+    position: fixed;
+    top:0;right:0;bottom:0;left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    visibility: hidden;
+}
+.outblPopups{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin:auto;
+    width:880px;
+    height: 570px;         
+}
+.blPopups{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin:auto;    
+    width:100%;
+    height: 100%;
+    overflow-x:hidden;
+    overflow-y: auto;
+    text-align: left;
+    padding:20px;
+    box-sizing: border-box;
+    background-color:#fff;
+    outline: 1px solid #333;
+}
+.blPopups::-webkit-scrollbar{display: none;}
+
+#LM_insert_btn{
+    font-size: 16px;
+    height: 30px;
+    color:#333;
+    text-align: center;
+    outline: 1px solid #333;
+    padding:5px 15px;
+    border:none;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: 'Microsoft JhengHei';
+    font-size: 0.85rem;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.LM_cancel{
+    width: 22px;
+    height: 22px;
+    background-color: #F76F32;
+    position: absolute;
+    top:-11px;
+    right: -11px;
+    line-height: 22px;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cancelbtn{
+    color: #fff;     
+}
+
+/*********************************/
+
+.L_type_shortline{
+    width: 220px;
+    height: 5px;
+    background-color: #333;
+}
+.L_type_line{
+    margin:0px auto;
+    width:100%;
+    height: 1px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.penImg{
+    display: inline-block;
+    vertical-align:top;
+}
+.icon-pencil{
+    font-size: 1.15rem;
+}
+.blTitle{
+    display: inline-block;
+    vertical-align:top;
+    margin-bottom: 5px;   
+}
+.blTitle input{
+    outline: none;
+    border:none;
+    height: 23px;
+    width: 182px;
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: '微軟正黑體';
+}
+
+/*------------------下拉式選單-----------------*/
+/*第一個篩選器*/
+.filterFirst{
+    font-size: 0;
+    display: inline-block;  
+}
+/*第二個之後得篩選器*/
+.filterNth{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0;
+}
+/*最後一個*/
+.filterLast{
+    float:right;
+}
+.pdropdown:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+div[class*=filter]{
+    position: relative;
+}
+
+.drowStyle{
+    font-family: '微軟正黑體';
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    height:30px;
+    width:150px;
+    padding:0 0 0 30px;
+    text-align-last:center;
+    background-color: #333;
+    outline: none;
+    border:none;
+    color:#fff;
+}
+
+.margin_for_window{
+    margin-left: 314px;
+}
+/**********************************/
+/*.biRight .biSearch{
+    margin-left: 794px;
+}*/
+
+.ml_type{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+.ml_type_T{
+    color:#fff;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+    background-color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ml_type_C{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.ML_isCheck{
+    text-align: center;
+    display: inline-block;
+    outline:1px solid #999;
+    width: 36px;
+    padding: 6px;
+    margin:0 4px;
+}
+.ML_isCheck:hover{
+    outline: 3px solid #333;
+}
+
+.LM_type_action{
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-left: 20px;  
+}
+
+.LM_type_action_T{
+    color:#fff;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+    background-color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.action_check{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    outline:1px solid #999;
+    width: 80px;
+    padding: 6px;
+    margin:0 4px;
+}
+
+.action_check:hover{
+    outline: 3px solid #333;
+}
+
+.LM_gray{
+    outline: 3px solid #333;
+}
+.text_area{
+    display: inline-block;
+    vertical-align: top;
+    font-family: '微軟正黑體';
+    margin-bottom: 10px;
+    width:710px;
+    height: 100px;
+    font-size: 0.85rem;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.LM_image_out{
+    font-size: 0;
+}
+
+
+/*********上傳圖片************/
+
+
+input[type="file"]{
+    display: none;
+}
+
+.LM_label{
+    display: block;
+    color:#333;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 160px;
+    outline: 1px solid #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin:0 auto;
+}
+.LM_label:hover{
+    outline: 1px solid #f46A2f;
+    color:#f46A2f;
+}
+.LM_flie label:hover,
+.LM_label.success{
+    outline-color: #f46A2f;
+    color:#f46A2f;
+}
+
+.LM_img_pre{
+    position: relative;
+}
+
+.LM_img_pre .cancelBtn{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    border-radius: 50%;
+    background-color:#fff;
+    border: 2px solid #f46a2f;
+    cursor: pointer;
+    z-index: 5;
+}
+.LM_img_pre .cancelBtn i:before{
+    vertical-align: middle;
+    font-size: 15px;
+    margin: 0;
+    color: #f46a2f;
+    position: relative;
+    top: -4px;
+    left: 0px;
+}
+
+
+.LM_image_out{
+    margin-top: 25px;
+    font-size: 0;
+}
+
+.LM_image{
+    width: 210px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.preview{
+    max-width: 200px;
+    max-height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    margin:0 auto;
+}
+
+.LM_img_pre{
+    text-align: center;
+}
+
+
+.LM_form{
+    text-align: center;
+    margin: 25px 0 50px 0;
+}
+
+
+.LM_btn{
+    border: none;
+    font-family: '微軟正黑體';
+    font-size:1rem; 
+    color:#333;
+    outline: 1px solid #333;
+    height: 30px;
+    width: 120px;
+    background-color: transparent;
+}
+
+/***********送出和清除**************/
+
+.LM_form{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.LM_btn{
+    border: none;
+    font-family: '微軟正黑體';
+    font-size:1rem; 
+    color:#333;
+    outline: 1px solid #333;
+    height: 30px;
+    width: 120px;
+    background-color: transparent;
+}
+
+.LM_reset{
+    margin-left: 10px;
+}
+
+
+/****************記得要改各別的寬****************/
+/*.biRight table tr th:nth-child(1){
+   width: 15%;
+}
+.biRight table tr th:nth-child(2){
+   width: 15%;
+}
+.biRight table tr th:nth-child(3),
+.biRight table tr th:nth-child(4),
+.biRight table tr th:nth-child(5){
+   width: 8%;
+}
+.biRight table tr th:nth-child(6){
+   width: 31%;  
+}
+.biRight table tr th:nth-child(7){
+   width: 15%;
+}*/
+
+/*--------------biRight 圖片------------------*/
+
+.BL_imgbox{
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.BL_imgbox img{
+    max-width: 100%;
+    height: auto;
+}
+/*-----input style寬度條整 蓋掉backendindex------*/
+
+.input_address{
+    width: 420px;
+}
+
+/*--------------label ------------------*/
+.label_title{
+    display: inline-block;
+    vertical-align: middle;
+    width: 110px;
+    border-left: 5px solid #555;
+    text-align: center;
+    margin-left: 5px;
+}
+
+
+/**按鈕左右間距**/
+.btn-margin{
+    margin: 0 2px;
+}
+
+
+
+
+
+
+.biSearch2,.biSearch3{
+    position: fixed;
+    top:0;right:0;bottom:0;left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    visibility: hidden;
+}
+
+
+.LM_cancel2,.LM_cancel3{
+    width: 22px;
+    height: 22px;
+    background-color: #F76F32;
+    position: absolute;
+    top:-11px;
+    right: -11px;
+    line-height: 22px;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*新增CSS*/
+.blLists{
+    width:100%;
+}
+.bottomblLists{
+    width:100%;
+}
+
+
+
+#L_branch,#pdaysDro{
+   font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 150px;
+    padding: 0 0 0 30px;
+    text-align-last: center;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-color: #075f9b;
+}
+
+
+.btheadshot{
+    width:120px;
+    text-align: center;
+}
+.btheadshot div{
+    margin: auto;
+    width:120px;
+    height:90px;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+input[type="button"],.btAdd,#LM_insert_btn{
+    cursor: pointer;
+    outline: none;
+    border:none;
+    font-weight: 600;
+    color:#fff;
+    background-color: #075f9b;
+}
+
+input[type="button"]:hover,.btAdd:hover,#LM_insert_btn:hover{
+    background-color: #aa3535;
+}
+
+.BL_select{
+    float: left;
+}

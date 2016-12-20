@@ -1,0 +1,1239 @@
+*{
+	/*outline: 1px solid #0af;*/
+}
+body{
+	font-family: 'Microsoft Jhenghei', sans-serif;
+	background-image: url(../../images/bg2.png);
+	color: #333;
+}
+
+.clearfix{
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+.container{
+	padding: 0 5px;
+}
+.container:after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+
+
+/* ================ 將footer固定至底部 ==================== */
+html, body {
+    height: 100%;
+}
+#hoyo_wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+#hoyo_header{
+    position: relative;
+}
+#hoyo_content {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
+}
+#hoyo_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/*================ 麵包屑 ================*/
+.breadcrumb{
+	height: 50px;
+	margin-top: 50px;
+	line-height: 50px;
+	color: #666;
+	box-sizing: border-box;
+}
+.breadcrumb .container{
+	padding: 0 15px;
+}
+.breadcrumb a{
+	font-size: 14px;
+	color: #666;
+}
+.breadcrumb a:hover,
+.bread_active{
+	padding-bottom: 1px;
+	border-bottom: 1px solid #999;
+}
+
+
+/*================ 支線tab ================*/
+
+.line_tab{
+	position: absolute;
+	width: 70px;
+	height: 25px;
+	top: 15px;
+	left: -7px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	line-height: 25px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+}
+
+.line_tab:before{
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	z-index: -1;
+	width: 0;height: 0;
+	border:7px solid transparent;
+}
+
+.ali_tab{background-color: #aa3535;}
+.ali_tab:before{border-right: 7px solid #aa8686;}
+
+.gigi_tab{background-color: #075f9b;}
+.gigi_tab:before{border-right: 7px solid #6695aa;}
+
+.neiWan_tab{background-color: #298736;}
+.neiWan_tab:before{border-right: 7px solid #758e76;}
+
+.pingC_tab{background-color: #ce631b;}
+.pingC_tab:before{border-right: 7px solid #cca183;}
+
+
+/*================ 遊記分享大標題 ================*/
+.ct_pad{
+	padding: 0 15px;
+	position: relative;
+}
+.w_title{
+	line-height: 40px;
+    font-size: 28px;
+    margin-bottom: 13px;
+}
+.w_addNoteBtn{
+	padding-left: 7px;
+	line-height: 31px;
+	border: 2px solid #ff9363;
+	border-radius: 3px;
+	position: absolute;
+	top: 3px;
+	right: 15px;
+	cursor: pointer;
+	font-size: 0;
+	transition: .5s;
+}
+.w_addNoteBtn a{
+	display: inline-block;
+	vertical-align: middle;
+	color: #F76F32;
+	font-size: 16px;
+	font-weight: bold;
+	transition: .5s;
+}
+
+.w_addNoteBtn .icon-plus{
+	font-size: 20px;
+	color: #F76F32;
+	vertical-align: middle;
+	transition: .5s;
+}
+.w_addNoteBtn:hover{
+	border: 2px solid #e43b36;
+}
+.w_addNoteBtn:hover a{
+	color: #e43b36;
+}
+.w_addNoteBtn:hover .icon-plus{
+	color: #e43b36;
+}
+
+.w_tops, .w_notes{
+	width: 100%;
+	position: relative;
+}
+.nodata{
+	padding: 5px 40px 20px;
+	font-size: 18px;
+	color: #777;
+}
+
+/*================ 排名前三的遊記 ================*/
+.w_space{
+	width: 100%;
+}
+
+.w_space h3{
+	font-size: 22px;
+	padding: 5px 8px 15px;
+	/*color: #D83C3B;*/
+}
+.w_space .topTitle{
+	/*color: #EDBF49;*/
+}
+.w_space h3 > i{
+	vertical-align: middle;
+}
+
+.topTitle .icon-crown:before{
+	position: relative;
+	top: -1px;
+}
+
+
+.w_space h3 > span{
+	position: relative;
+	left: -3px;
+}
+.noteTitle .icon-clock:before{
+    position: relative;
+    top: -3px;
+}
+
+.w_space .w_grid{
+	font-size: 0;
+}
+
+.w_grid .top_box{
+	width: 33.33333333%;
+	margin-bottom: 50px;
+	padding: 0 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+.top_box .w_top{
+	position: relative;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+	cursor: pointer;
+	transition: .5s;
+}
+
+.top_box .w_top:hover{
+	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+
+.w_top .wrap_img{
+	overflow: hidden;
+	margin: 0 0 10px;
+	position: relative;
+	background-color: #000;
+}
+.w_top .top_crown{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.w_top .top_crown img{
+	width: 45px;
+}
+
+.w_top .top_score{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 0;
+	text-align: center;
+	position: absolute;
+	top: 6px;
+	right: 3px;
+	color: #EDBF49;
+}
+.top_score i{
+	font-size: 14px;
+	position: absolute;
+	top: -2px;
+	right: 2px;
+}
+.top_score i:before{
+	margin: 0;
+	vertical-align: top;
+	text-shadow: 0px 0px 1px #666;
+}
+.top_score .top_s{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0px 0px 2px #333;
+	position: absolute;
+	top: 30px;
+	right: 18px;
+	z-index: 3;
+}
+
+.w_top .top_info{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0,0,0, 0.4);
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	font-size: 0;
+	color: rgba(255,255,255, .85);
+}
+.top_info .note_days{
+	width: 20%;
+	height: 60px;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	position: relative;
+}
+.w_top .note_days:before{
+	content: '';
+	width: 0;
+	height: 60px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.w_top .note_days:after{
+	content: '';
+	width: 0;
+	height: 45px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border-right: 2px solid rgba(255,255,255,.8);
+}
+.note_days p{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 12px 0 0 26px;
+	font-size: 14px;
+	position: relative;
+}
+.note_days .day{
+	padding: 2px 5px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 35px;
+	position: absolute;
+	top: -7px;
+	left: 3px;
+	color: #fff;
+}
+.top_info .top_txt{
+	width: 80%;
+	padding: 10px 8px 10px 11px;
+	float: left;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.top_txt .top_title{
+	margin-bottom: 7px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.top_txt .top_desc{
+	font-size: 1rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+}
+.infoBox{
+	width: 100%;
+	margin-top: -5px;
+	box-sizing: border-box;
+}
+.infoBox .w_mem{
+	float: left;
+	font-size: 0;
+}
+.w_mem .memPic{
+	width: 30px;
+	height: 0;
+	padding-bottom: 30px;
+	margin: 2px 8px 2px 2px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #fff;
+	font-size: 0;
+	overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 1px rgba(0,0,0,.3);
+}
+.memPic img{
+	width: auto;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.w_mem .w_memId{
+	padding-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 13px;
+	color: #666;
+	position: relative;
+}
+.w_mem .w_memId:after{
+	content: '';
+	width: 0;
+	height: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	border-right: 1px solid #999;
+}
+.w_mem .w_memDate{
+	padding-left: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 13px;
+	color: #666;
+}
+
+
+/* ===========  愛心收藏按鈕  =============================== */
+.infoBox .w_memFavi{
+	float: right;
+	font-size: 0;
+	color: #ccc;
+	position: relative;
+	cursor: pointer;
+}
+.infoBox .w_memFavi:before{
+	content: '';
+	width: 0;
+	height: 34px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.w_memFavi:hover i.icon-heart-empty:before{
+	content: '\e802';
+	/*color: #E83828;*/
+	color: rgba(232, 56, 40, .4);
+}
+
+.w_memFavi i.special:before{
+	content: '\e802';
+	color: #E83828;
+}
+.w_memFavi:hover i.special:before{
+	content: '\e802';
+	color: #E83828;
+}
+.icon-heart-empty,
+.icon-heart{
+	font-size: 20px;
+	vertical-align: middle;
+}
+.icon-heart-empty:before{
+	font-weight: bold;
+}
+
+
+.w_memFavi:hover i.special:before{
+	/*content: '\e801';*/
+	/*color: #aaa;*/
+}
+
+.w_memFavi.click_heart:hover i.special:before{
+	/*content: '\e801';*/
+	/*color: #aaa;*/
+}
+.w_memFavi i.special.cancel_heart:before{
+	/*content: '\e801';*/
+	/*color: #aaa;*/
+}
+/*
+#showMsg{
+	width: 150px;
+	padding: 30px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+	border: 3px solid rgba(228, 59, 54, 1.0);
+	background-color: rgba(255,255,255, .7);
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+	position: fixed;
+	left: 15px;
+	bottom: 65px;
+	z-index: 10;
+	display: none;
+	font-size: 16px;
+	text-align: center;
+	color: #333;
+	box-sizing: border-box;
+}
+*/
+
+#showTxt{
+	position: absolute;
+	letter-spacing: 1px;
+	font-size: 14px;
+	padding: 6px 7px;
+	color: #fff;
+	background-color: #666;
+	display: none;
+	z-index: 2;
+	border-radius: 3px;
+}
+
+/*================ 一般遊記 ================*/
+.w_grid .noteBox{
+	width: 25%;
+	margin-bottom: 35px;
+	padding: 0 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+.noteBox .note{
+	position: relative;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+	cursor: pointer;
+	transition: .5s;
+}
+
+.noteBox .note:hover{
+	box-shadow: 1px 1px 7px rgba(0,0,0,.5);
+}
+.note .wrap_img{
+	overflow: hidden;
+	margin: 0 0 10px;
+	background-color: #000;
+	position: relative;
+}
+.w_top .wrap_img img,
+.note .wrap_img img {
+    width: 100%;
+    height: auto;
+}
+
+.note .note_score{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 0;
+	text-align: center;
+	position: absolute;
+	top: 6px;
+	right: 0px;
+	color: rgba(237, 191, 73, 1);
+}
+.note_score i{
+	font-size: 20px;
+	position: absolute;
+	top: 8px;
+	right: 19px;
+}
+.note_score i:before{
+	margin: 0;
+	vertical-align: top;
+	text-shadow: 0px 0px 1px rgba(255,255,255,1),
+				 0px 0px 2px rgba(255,255,255,.7),
+				 0px 0px 3px rgba(255,255,255,.3);
+}
+.note_score .top_s{
+	width: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0px 0px 2px #333;
+	position: absolute;
+	top: 27px;
+	right: 17px;
+	z-index: 3;
+}
+
+
+.note .top_info{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0,0,0, 0.4);
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	font-size: 0;
+	color: rgba(255,255,255, .85);
+}
+.top_info .note_days{
+	width: 20%;
+	height: 60px;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	position: relative;
+}
+.note .note_days:before{
+	content: '';
+	width: 0;
+	height: 60px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.note .note_days:after{
+	content: '';
+	width: 0;
+	height: 40px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border-right: 2px solid rgba(255,255,255,.8);
+}
+.note .top_info .note_days {
+    width: 23%;
+    height: 60px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.note .top_info .top_txt {
+    width: 77%;
+	padding: 10px 8px 10px 7px;
+    float: left;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+
+
+/*================ page list ================*/
+.w_pageList .container{
+	padding: 0 10px;
+}
+.w_pageList .w_pages{
+	float: right;
+	font-size: 0;
+	text-align: center;
+}
+.w_pages li{
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 15px;
+}
+.w_pages li+li{
+	padding-left: 10px;
+}
+.w_pages a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 30px;
+	color: #666;
+	cursor: pointer;
+}
+.w_pages a:hover,
+.w_pages .page-active{
+	color: #fff;
+	background-color: #049E92;
+}
+
+.w_pages a.chPages{
+	width: 70px;
+	margin: 0 5px;
+	border-radius: 0px;
+}
+.w_pages a.chPages:hover{
+	color: #00B5AD;
+	background-color: transparent;;
+}
+
+
+
+/* ================ footer ==================== */
+
+footer{
+	height: 50px;
+	background-color: #333;
+	text-align:  center;
+	color: rgba(255,255,255, .7);
+	font-size: 0.85rem;
+	line-height: 50px;
+    margin-top: 50px;
+}
+footer::selection{
+	background-color: #333;
+	color: #fff;
+}
+
+
+
+
+/*============== Media Query ================================*/
+@media screen and (max-width: 479px){
+.container{
+	width: 100%;
+	box-sizing: border-box;
+}
+.breadcrumb{
+	margin-top: 30px;
+}
+.w_space {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.w_grid .top_box{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.w_grid .noteBox{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.w_top,
+.note{
+	font-size: 0;
+	background-color: #fff;
+}
+.w_top .wrap_img,
+.note .wrap_img{
+	width: 48%;
+	height:0;
+	display: inline-block;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	padding-bottom: 35%;
+	position: relative;
+}
+.w_top .wrap_img img,
+.note .wrap_img img{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.w_top .top_info,
+.note .top_info{
+	width: 52%;
+	height: auto;
+	padding-top: 10px;
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	background-color: transparent;
+	font-size: 16px;
+	color: #333;
+}
+
+.w_top .top_crown img{
+	width: 30px;
+}
+
+.note_days .day,
+.top_txt .top_title{
+	color: #333;
+	font-size: 18px;
+/*	font-weight: normal;*/
+}
+.top_info .note_days,
+.note .top_info .note_days{
+	padding: 0px;
+	vertical-align: middle;
+	width: 100%;
+	height: 20px;
+	text-align: left;
+	padding-left: 5px;
+}
+.top_info .top_txt,
+.note .top_info .top_txt{
+	width: 100%;
+	padding-top: 34px;
+}
+.w_top .note_days:before{
+	height: 0;
+}
+.note_days .day{
+	position: relative;
+	top: -6px;
+	font-size: 25px;
+	color: #F76F32;
+}
+.note_days p{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	font-size: 15px;
+    top: 4px;
+}
+.top_box .w_top .note_days:after{
+	border-right: none;
+	right: -5px;
+}
+.infoBox{
+	padding-top: 10px;
+}
+.top_score .top_s{
+	top: 22px;
+    right: 8px;
+    color: #999;
+    text-shadow: none;
+}
+.note_score .top_s{
+    color: #999;
+    text-shadow: none;
+    top: 22px;
+    right: 12px;
+}
+.note_score i{
+    top: 3px;
+    right: 14px;
+}
+
+
+}/*End of @media screen and (max-width: 479px) */
+
+@media screen and (min-width: 480px){
+.w_space{
+    width: 100%;
+    padding: 0 10px;
+	box-sizing: border-box;
+}
+.breadcrumb{
+	margin-top: 30px;
+}
+.w_grid .top_box{
+	width: 100%;
+	margin-bottom: 30px;
+	vertical-align: top;
+}
+.w_grid .noteBox{
+	width: 100%;
+	margin-bottom: 35px;
+	vertical-align: top;
+}
+
+.w_top,.note{
+	font-size: 0;
+	background-color: #fff;
+}
+.w_top .wrap_img,
+.note .wrap_img{
+	width: 40%;
+	height: 0;
+	padding-bottom: 26.6666666%;
+	display: inline-block;
+	box-sizing: border-box;
+	margin-bottom: 0;
+}
+.note .wrap_img img {
+    width: 100%;
+    height: auto;
+}
+
+.w_top .top_info,
+.note .top_info{
+	width: 60%;
+	height: auto;
+	padding-top: 10px;
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	background-color: transparent;
+	font-size: 16px;
+	color: #333;
+}
+
+
+.note_days .day,
+.top_txt .top_title{
+	color: #333;
+	font-size: 18px;
+}
+.top_info .note_days,
+.note .top_info .note_days{
+	padding: 0px;
+	vertical-align: middle;
+	width: 100%;
+	height: 20px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.top_info .top_txt,
+.note .top_info .top_txt{
+	width: 100%;
+	padding-top: 50px;
+}
+.w_top .note_days:before{
+	height: 0;
+}
+.note_days .day{
+	position: relative;
+	top: -4px;
+	font-size: 22px;
+	color: #F76F32;
+}
+.note_days p{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+}
+.top_box .w_top .note_days:after{
+	border-right: none;
+	right: -5px;
+}
+.infoBox{
+	padding-top: 10px;
+}
+
+.top_score .top_s{
+	top: 31px;
+    right: 15px;
+    color: #999;
+    text-shadow: none;
+}
+.note_score .top_s{
+    color: #999;
+    text-shadow: none;
+    top: 22px;
+    right: 12px;
+}
+.note_score i{
+    top: 3px;
+    right: 14px;
+}
+
+
+}/*END of @media screen and (min-width: 480px) */
+
+@media screen and (min-width: 768px){
+
+.container{
+	width: 100%;
+	/*padding: 0 6%;*/
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+.w_grid .top_box{
+	width: 33.33333333%;
+	margin-bottom: 50px;
+	vertical-align: top;
+}
+.w_grid .noteBox{
+	width: 50%;
+	margin-bottom: 35px;
+	vertical-align: top;
+}
+.w_top .wrap_img{
+	width: 100%;
+	height: 0;
+	padding-bottom: 66.66666666%;
+	overflow: hidden;
+	position: relative;
+}
+.w_top .wrap_img img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.w_top .top_info{
+	width: 100%;
+	height: 60px;
+	display: block;
+	padding: 0;
+	background-color: rgba(0,0,0, 0.4);
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	font-size: 0;
+	color: rgba(255,255,255, .85);
+}
+.top_info .note_days{
+	width: 20%;
+	height: 60px;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	position: relative;
+	padding-left: 0;
+}
+.w_top .note_days:before{
+	height: 60px;
+}
+.top_box .w_top .note_days:after{
+	content: '';
+	width: 0;
+	height: 45px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border-right: 2px solid rgba(255,255,255,.8);
+}
+.top_txt .top_title {
+	font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+.note_days p{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 12px 0 0 26px;
+	font-size: 14px;
+	position: relative;
+}
+.note_days .day{
+	padding: 2px 5px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 35px;
+	position: absolute;
+	top: -7px;
+	left: 3px;
+	color: #fff;
+}
+.top_info .top_txt{
+	width: 80%;
+	padding: 10px 8px 10px 11px;
+	float: left;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+.note .note_days .day{
+	color: #333;
+	font-size: 28px;
+	position: relative;
+	color: #F76F32;
+}
+.note .note_days:before {
+	height: 0;
+}
+
+.note .note_days p{
+	padding: 5px 0 0 0;
+}
+.note .top_txt .top_title{
+	color: #333;
+}
+.note .top_info .top_txt {
+    padding-top: 20px;
+    padding: 20px 10px 0 10px;
+}
+
+
+} /*END of @media  screen and (min-width: 768px) */
+
+@media screen and (min-width: 970px){
+
+.w_grid .top_box{
+	width: 33.33333333%;
+	margin-bottom: 40px;
+	vertical-align: top;
+}
+.w_grid .noteBox{
+	width: 25%;
+	margin-bottom: 35px;
+	vertical-align: top;
+}
+.w_top .top_info {
+    width: 100%;
+    height: 60px;
+    display: block;
+    padding: 0;
+    background-color: rgba(0,0,0, 0.4);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 0;
+    color: rgba(255,255,255, .85);
+}
+.note_days .day {
+    padding: 2px 5px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 35px;
+    position: absolute;
+    top: -7px;
+    left: 3px;
+    color: #fff;
+}
+.w_top .note_days:before{
+	content: '';
+	width: 0;
+	height: 60px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.note_days p {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 0 0 26px;
+    font-size: 14px;
+    position: relative;
+}
+.note_days .day {
+    padding: 2px 5px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 35px;
+    position: absolute;
+    top: -7px;
+    left: 3px;
+    color: #fff;
+}
+
+
+.note .wrap_img {
+    width: 100%;
+    /*height: 180px;*/
+    padding-bottom: 66.66666666%;
+    overflow: hidden;
+    position: relative;
+}
+.note .wrap_img img{
+    width: 100%;
+    height: auto;
+ 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.note .top_info {
+    width: 100%;
+    height: 60px;
+    display: block;
+    padding: 0;
+    background-color: rgba(0,0,0, 0.4);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 0;
+    color: rgba(255,255,255, .85);
+}
+.note .top_info .note_days {
+    width: 20%;
+    height: 60px;
+    float: left;
+    font-size: 16px;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+.note .top_info .top_txt {
+    width: 80%;
+    padding: 10px 8px 10px 11px;
+    float: left;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.note .top_txt .top_title {
+    color: #fff;
+}
+.note .note_days .day {
+    color: #fff;
+}
+.note .note_days:after{
+    content: '';
+    width: 0;
+    height: 45px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-right: 2px solid rgba(255,255,255,.8);
+}
+.note .note_days:before {
+     height: 64px; 
+}
+
+.note .note_days p{
+	padding: 5px 0 0 0;
+}
+
+.top_score .top_s {
+    top: 31px;
+    right: 15px;
+    color: #fff;
+    text-shadow: 0px 0px 2px #333;
+}
+.note_score .top_s {
+    color: #fff;
+    text-shadow: 0px 0px 2px #333;
+    top: 22px;
+    right: 12px;
+}
+
+
+
+} /*END of @media screen and (min-width: 970px) */
+
+@media screen and (min-width: 1170px){
+
+.container{
+	max-width: 1170px;
+	box-sizing: border-box;
+}
+.breadcrumb{
+	margin-top: 50px;
+}
+
+
+
+}/*END of @media screen and (min-width: 1170px) */

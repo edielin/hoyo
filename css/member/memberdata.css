@@ -1,0 +1,348 @@
+/*會員專區選項*/
+
+body{
+	background-image:url('../../images/bg2.png');
+}
+.ch{ font-family:"微軟正黑體"; }
+
+/*=============================*/
+
+html, body {
+    height: 100%;
+}
+#hoyo_wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+#hoyo_header{
+    position: relative;
+}
+#hoyo_content {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+#hoyo_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*=============================*/
+
+
+#memdata{
+	max-width: 1170px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	margin:50px auto;
+}
+
+.m_leftBox{
+	width: 160px;
+	text-align: center;
+	float: left;
+	font-size: 1rem;
+}
+
+.m_rightBox{
+	width: calc(100% - 190px);
+	float: left;
+	box-sizing: border-box;
+	margin-left: 30px;
+	padding:3px 15px;
+	/*border:3px solid hsla(1, 76%, 65%, .3);*/
+	border-radius: 5px;
+	min-height:410px;
+	line-height: 25px;
+	background-color: rgba(255,255,255,.3);
+	/*box-shadow: 0 0 2px rgba(0,0,0,.3) inset;*/
+}
+.m_rightBox .m_color{
+	color: #333;
+}
+.userImg{
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 5px;
+	overflow: hidden;
+	text-align: center;
+	border:5px solid #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,.3); 
+	margin-bottom:15px;
+	background-color: #fff;
+}
+.userImg img{
+    min-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+.m_nav{
+	/*background-color: #6495ed;*/
+}
+.m_nav ul{
+	width: 100%;
+	position: relative;
+}
+.m_nav ul li{
+	margin: auto;
+	margin-bottom: 5px;
+	line-height:25px;
+	border-radius: 5px;
+	font-size: 18px;
+	text-shadow: 0 0 2px rgba(0,0,0,.2);
+	box-sizing: border-box;
+	background-image: -webkit-linear-gradient( -90deg, hsla(1, 76%, 65%, 1) 0%, hsla(1, 76%, 70%, .9) 100%);
+	background-image: -moz-linear-gradient( -90deg, hsla(1, 76%, 65%, 1) 0%, hsla(1, 76%, 70%, .9) 100%);
+	background-image: -ms-linear-gradient( -90deg, hsla(1, 76%, 65%, 1) 0%, hsla(1, 76%, 70%, .9) 100%);
+}
+.m_nav a{
+	display: block;
+	width:100%;
+	color:#fff;
+	padding:5px 10px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	position: relative;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0);
+}
+
+.m_nav a:after{
+	content: '';
+	position: absolute;
+	bottom: 0;left: 0;right: 0;margin: auto;
+	width: 0%;
+	height: 3px;
+	background-color:  hsla(1, 76%, 65%, 0);
+	transition: .5s;
+}
+
+.m_nav a:hover{
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+
+.m_nav a:hover:after{
+	width: 96%;
+	background-color:  hsla(1, 76%, 65%, 1);
+}
+
+.m_nav a.m_nav_active{
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+
+.m_nav a.m_nav_active:after{
+	width: 96%;
+	background-color:  hsla(1, 76%, 65%, 1);
+}
+
+/*表格資料修改*/
+/*-----------------分頁大標題------------------*/
+.pH2{
+	color: #333;
+	width:100%;
+	font-size: 28px;
+	line-height: 40px;
+	text-align: left;
+	border-bottom:2px solid #ccc;
+	margin-bottom:25px;
+	padding-bottom: 10px; 
+}
+/*-----------------麵包屑-----------------*/
+
+.breadcrumb{
+	height: 50px;
+/*	margin-top: 50px;*/
+	line-height: 50px;
+	color: #666;
+	box-sizing: border-box;
+}
+.breadcrumb .container{
+	padding: 0;
+}
+.breadcrumb a{
+	font-size: 14px;
+	color: #666;
+}
+.breadcrumb a:hover,
+.bread_active{
+	padding-bottom: 1px;
+	border-bottom: 1px solid #999;
+}
+/*================ 麵包屑end ================*/
+
+
+
+.md_title{
+	color: #333; 
+	font-size: 24px;
+	letter-spacing: 5px;
+	border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 10px;	 
+}
+
+.md_row{
+	font-size:0; 
+}
+.md_row+.md_row{
+	margin-top: 15px; 
+}
+
+i.md_icon{
+	position: relative;
+	top: -3px;
+	left:-1px;
+	color: #fff;
+	font-size: 14px;
+/*	line-height: 10px;*/
+	vertical-align:middle;
+	z-index: 2;
+}
+
+.md_inputBox{
+	position: relative;
+	font-size: 16px;
+	max-width: 400px;
+	height: 25px;
+	margin-top:-5px; 
+	box-sizing: border-box;
+	padding-left: 5px;
+	background-color: #fff;
+	border-radius: 0 5px 5px 0;
+}
+
+.md_inputBox:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	border-radius: 5px 0 0 5px;
+	background-color: hsla(1, 76%, 65%, .7);
+}
+
+
+.md_inputBox input[type="email"],.md_inputBox input[type="text"],.md_inputBox input[type="password"]{
+	outline: 1px solid #f00;
+	font-family: '微軟正黑體';
+	min-width:220px;
+	height: 100%;
+	font-size: 15px;
+	vertical-align: middle;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	padding: 5px;
+	color:#777;
+}
+
+.md_row label{
+	position: relative;
+	font-size: 15px;
+	line-height: 15px;
+}
+
+.md_row label.md_required:after{
+	content: '*';
+	color: hsla(1, 76%, 65%, 1);
+	position: absolute;
+	font-family: Tahoma;
+	font-weight: 600;
+	line-height: 15px;
+	right: -15px;
+	top: 0;bottom: 0;margin:auto;
+}
+
+
+input[type="file"]#md_MEM_img{
+	display: none;
+}
+
+#md_label_file{
+	display: inline-block;
+	padding-left: 5px;
+	box-sizing: border-box;
+	min-width: 200px;
+	max-width: 400px;
+	font-size: 14px;
+	color:#777;
+}
+
+#md_submit{
+	display: block;
+	width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    padding: 7px;
+    cursor: pointer;
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    border-bottom: 3px solid hsla(1, 76%, 65%, 1);
+    transition: .5s;
+	font-family: "微軟正黑體";
+}
+
+#md_submit:hover{
+    color: hsla(1, 76%, 65%, 1);
+}
+
+
+
+/*-----------------footer-------------------*/
+footer{
+ background-color: #333;
+ text-align:  center;
+ color: rgba(255,255,255, .7);
+ font-size: 0.85rem;
+ line-height: 50px;
+}
+footer::selection{
+ background-color: #333;
+ color: #fff;
+}
+/*-----------------footer end------------*/
+
+
+
+@media screen and (max-width: 479px){
+	.m_leftBox{
+		width: 100%;
+	}
+	.m_rightBox{
+		width:100%;
+		margin:auto;
+	}
+	.m_nav ul{
+		margin-bottom: 20px;
+	}
+	.m_rightBox{
+		min-height: 100px;
+	}
+	.breadcrumb{
+		margin-top: -20px;
+	}
+}
+
+@media screen and (min-width: 480px){
+	.breadcrumb{
+		margin-top: 50px;
+	}
+
+}
+
+@media screen and (min-width: 970px){
+
+}
+
+@media screen and (min-width: 1170px){
+
+}

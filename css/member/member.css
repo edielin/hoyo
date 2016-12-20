@@ -1,0 +1,222 @@
+/*會員專區選項*/
+
+body{
+	background-image:url('../../images/bg2.png');
+}
+
+/*=============================*/
+
+html, body {
+    height: 100%;
+}
+#hoyo_wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+#hoyo_header{
+    position: relative;
+}
+#hoyo_content {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+#hoyo_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*=============================*/
+
+
+.ch{ font-family:"微軟正黑體"; }
+
+#memdata{
+	max-width: 1170px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	margin:50px auto;
+}
+
+.m_leftBox{
+	width: 160px;
+	text-align: center;
+	float: left;
+	font-size: 1rem;
+}
+
+.m_rightBox{
+	width: calc(100% - 190px);
+	float: left;
+	box-sizing: border-box;
+	margin-left: 30px;
+	padding: 15px;
+/*	border:3px solid hsla(1, 76%, 65%, .3);
+	border-radius: 5px;*/
+	min-height:410px;
+	line-height: 25px;
+	background-color: rgba(255,255,255,.3);
+/*	box-shadow: 0 0 2px rgba(0,0,0,.3) inset;*/
+}
+.m_rightBox .m_color{
+	/*outline: 1px solid #f00;*/
+	color: #333;
+}
+.userImg{
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 5px;
+	overflow: hidden;
+	text-align: center;
+	border:5px solid #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,.3); 
+	margin-bottom:15px;
+	background-color: #fff;
+}
+.userImg img{
+    min-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+.m_nav{
+	/*background-color: #6495ed;*/
+}
+.m_nav ul{
+	width: 100%;
+	position: relative;
+}
+.m_nav ul li{
+	margin: auto;
+	margin-bottom: 5px;
+	line-height:25px;
+	border-radius: 5px;
+	font-size: 18px;
+	text-shadow: 0 0 2px rgba(0,0,0,.2);
+	box-sizing: border-box;
+	background-image: -webkit-linear-gradient( -90deg, hsla(1, 76%, 65%, 1) 0%, hsla(1, 76%, 70%, .9) 100%);
+	background-image: -moz-linear-gradient( -90deg, hsla(1, 76%, 65%, 1) 0%, hsla(1, 76%, 70%, .9) 100%);
+	background-image: -ms-linear-gradient( -90deg, hsla(1, 76%, 65%, 1) 0%, hsla(1, 76%, 70%, .9) 100%);
+}
+.m_nav a{
+	display: block;
+	width:100%;
+	color:#fff;
+	padding:5px 10px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	position: relative;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0);
+}
+
+.m_nav a:after{
+	content: '';
+	position: absolute;
+	bottom: 0;left: 0;right: 0;margin: auto;
+	width: 0%;
+	height: 3px;
+	background-color:  hsla(1, 76%, 65%, 0);
+	transition: .5s;
+}
+
+.m_nav a:hover{
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+
+.m_nav a:hover:after{
+	width: 96%;
+	background-color:  hsla(1, 76%, 65%, 1);
+}
+
+/*表格資料修改*/
+/*-----------------分頁大標題------------------*/
+.pH2{
+	color: #333;
+	width:100%;
+	font-size: 28px;
+	line-height: 40px;
+	text-align: left;
+	border-bottom:2px solid #ccc;
+	margin-bottom:25px;
+	padding-bottom: 10px; 
+}
+/*-----------------麵包屑-----------------*/
+
+.breadcrumb{
+	height: 50px;
+/*	margin-top: 50px;*/
+	line-height: 50px;
+	color: #666;
+	box-sizing: border-box;
+}
+.breadcrumb .container{
+	padding: 0;
+}
+.breadcrumb a{
+	font-size: 14px;
+	color: #666;
+}
+.breadcrumb a:hover,
+.bread_active{
+	padding-bottom: 1px;
+	border-bottom: 1px solid #999;
+}
+/*================ 麵包屑end ================*/
+
+
+
+/*-----------------footer-------------------*/
+footer{
+ height: 50px;
+ background-color: #333;
+ text-align: center;
+ color: rgba(255,255,255, .7);
+ font-size: 0.85rem;
+ line-height: 50px;
+}
+footer::selection{
+ background-color: #333;
+ color: #fff;
+}
+/*-----------------footer end------------*/
+
+
+
+@media screen and (max-width: 479px){
+	.m_leftBox{
+		width: 100%;
+	}
+	.m_rightBox{
+		width:100%;
+		margin:auto;
+	}
+	.m_nav ul{
+		margin-bottom: 20px;
+	}
+	.m_rightBox{
+		min-height: 100px;
+	}
+
+	.breadcrumb{
+		margin-top: -20px;
+	}
+}
+
+@media screen and (min-width: 480px){
+	.breadcrumb{
+		margin-top: 50px;
+	}
+
+}
+
+@media screen and (min-width: 970px){
+
+}
+
+@media screen and (min-width: 1170px){
+
+}

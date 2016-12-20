@@ -1,0 +1,267 @@
+
+/*==================  common  ================*/
+
+/*對 p 的設定會影響到 transition-group name="dbbox" tag="p"*/
+
+*{
+	font-family: '微軟正黑體';
+}
+html, body, header, section{
+	width: 100%;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.clearfix{
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+
+.wrapper{
+	width: 100%;
+	margin: auto;
+}
+.imgbox{
+	display: block;
+	overflow: hidden;
+}
+.imgbox img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.grey_btn{
+	display: block;
+	background-color: #acacac;
+	color:#fff;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	border-radius: 8px;
+	text-align: center;
+	cursor: pointer;
+	transition: all .5s;
+}
+.grey_btn:hover{
+	background-color: hsla(0, 0%, 57%, 1.0);
+	transition: all .5s;
+}
+
+.more_btn{
+	display: block;
+	width: 80%;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 10%;
+	text-align: center;
+	border-radius: 8px;
+	background-color: #eaeaea;
+	color:#333;
+	cursor: pointer;
+	transition: all .5s;	
+}
+.more_btn:hover{
+	background-color: hsla(0, 0%, 80%, 1.0);
+	transition: all .5s;
+}
+
+.more_r_btn{
+	display: block;
+	width: 80px;
+	height: 40px;
+	border: 2px solid rgba(100,100,100,.3);
+	background-color: rgba(100,100,100,.1);
+	border-radius: 5px;	
+	text-align: center;
+	cursor: pointer;
+	line-height: 40px;
+	float: right;
+	transition: all .5s;
+}
+.more_r_btn:hover{
+	background-color: rgba(100,100,100,.2);
+	transition: all .5s;
+}
+
+
+
+
+
+
+/*==================    ================*/
+/*支線標籤的父層要position: relative;*/
+.line_tab{
+	position: absolute;
+	width: 70px;
+	height: 25px;
+	top: 15px;
+	left: -7px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	line-height: 25px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+}
+
+.line_tab:before{
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	z-index: -1;
+	width: 0;height: 0;
+	border:7px solid transparent;
+}
+
+.ali_tab{background-color: #aa3535;}
+.ali_tab:before{border-right: 7px solid #aa8686;}
+
+.gigi_tab{background-color: #075f9b;}
+.gigi_tab:before{border-right: 7px solid #6695aa;}
+
+.neiWan_tab{background-color: #298736;}
+.neiWan_tab:before{border-right: 7px solid #758e76;}
+
+.pingC_tab{background-color: #ce631b;}
+.pingC_tab:before{border-right: 7px solid #cca183;}
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (max-width: 767px){
+
+h2{
+	line-height: 40px;
+	font-size: 24px;
+}
+h3{
+	line-height: 40px;
+	font-size: 20px;
+}
+h4{
+	line-height:32px;
+	font-size: 18px;
+}
+/*p{
+	line-height: 24px;
+	font-size: 16px;
+}*/
+.small_14{
+	line-height: 20px;
+	font-size: 14px;
+}
+
+} /*END of @media screen and (max-width: 767px)*/
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+h2{
+	line-height: 40px;
+	font-size: 24px;
+}
+h3{
+	line-height: 40px;
+	font-size: 20px;
+}
+h4{
+	line-height:32px;
+	font-size: 18px;
+}
+/*p{
+	line-height: 24px;
+	font-size: 16px;
+}*/
+.small_14{
+	line-height: 18px;
+	font-size: 14px;
+}
+
+} /*END of @media  screen and (min-width: 768px) and (max-width: 991px)*/
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 992px){
+
+h2{
+	width: 960px;
+	margin: auto;
+	box-sizing: border-box;
+	line-height: 40px;
+	font-size: 24px;
+}
+h3{
+	line-height: 40px;
+	font-size: 20px;
+}
+h4{
+	line-height:32px;
+	font-size: 18px;
+}
+/*p{
+	line-height: 24px;
+	font-size: 16px;
+}*/
+.small_14{
+	line-height: 18px;
+	font-size: 14px;
+}
+
+} /*END of @media  screen and (min-width: 992px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 1200px){
+
+
+
+} /*END of @media screen and (min-width: 1200px)*/
+
+
+/*#F9F7E8*/
+/*hsla(240, 0%, 22%, .2)*/
+/*rgba(255,255,255,.9)*/
+/*#e43b36*/

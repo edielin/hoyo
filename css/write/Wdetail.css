@@ -1,0 +1,1446 @@
+*{
+	/*outline: 1px solid #f00;*/
+}
+body{
+	/*font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Jhenghei', sans-serif;*/
+	font-family: Arial, 'Microsoft Jhenghei', sans-serif;
+	background-image: url(../../images/bg2.png);
+	color: #333;
+}
+
+
+.clearfix{
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+.container{
+	padding: 0 15px;
+	position: relative;
+}
+.container:after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+[class^="icon-"]:before{
+	vertical-align: middle;
+}
+.btn-gray {
+    background-color: transparent;
+    background-image: url(../../images/bg2.png);
+    outline: 1px solid #333;
+    border-radius: 0px;
+    border: none;
+    padding: 5px 15px;
+    margin: 5px 0;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ================ 將footer固定至底部 ==================== */
+html, body {
+    height: 100%;
+}
+#hoyo_wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+#hoyo_header{
+    position: relative;
+}
+#hoyo_content {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
+}
+#hoyo_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*================ 麵包屑 ================*/
+.breadcrumb{
+	height: 50px;
+	margin-top: 50px;
+	line-height: 50px;
+	color: #666;
+	box-sizing: border-box;
+}
+.breadcrumb .container{
+	padding: 0 15px;
+}
+.breadcrumb a{
+	font-size: 14px;
+	color: #666;
+}
+.breadcrumb a:hover,
+.bread_active{
+	padding-bottom: 1px;
+	border-bottom: 1px solid #999;
+}
+
+
+/*================ 遊記內容 ================*/
+
+#hoyo_content > .breadcrumb + .container{
+    position: relative;
+    left: -15px;
+}
+
+
+.wd_content{
+	width: 70%;
+	box-sizing: border-box;
+	float: left;
+}
+
+.nodata{
+	padding: 0 15px;
+	font-size: 20px;
+	/*text-align: center;*/
+}
+
+.arrow{
+	color: #f46a2f;
+}
+
+.container .reply_title{
+	display: none;
+}
+
+/*================ 遊記基本資訊 ================*/
+
+.mainPic {
+	max-width: 798px;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.mainPic .picBox{
+	width: 100%;
+	height: 265px;
+	position: relative;
+	overflow: hidden;
+	background-color: #333;
+	/*padding-bottom: 33.33333333%;*/
+}
+.picBox img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.wd_info{
+	margin-bottom: 5px;
+	padding: 0 15px;
+}
+
+.wd_info .ti{
+	float: right;
+	font-size: 0;
+	vertical-align: middle;
+	position: relative;
+}
+.wd_info .wd_title{
+	line-height: 40px;
+	font-size: 26px;
+	float: left;
+	font-weight: bold;
+}
+
+.ti .wd_mem{
+	padding-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	text-align: center;
+	position: relative;
+}
+.wd_mem:before{
+	content: '';
+	width: 0;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;;
+	vertical-align: middle;
+}
+.wd_mem .memName:after{
+	content: '';
+	width: 1px;
+	height: 30px;
+	background-color: #ccc;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 8px;
+}
+.wd_mem .memPic{
+	width: 35px;
+	height: 0;
+	padding-bottom: 35px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	/*box-shadow: 1px 1px 2px #777;*/
+}
+.wd_mem .memPic img{
+	width: auto;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.wd_mem span{
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.ti .wd_time{
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+
+/*================ 遊記行程 ================*/
+.wd_tour{
+	margin-bottom: 30px;
+}
+.wd_tour .days{
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #E43B36;
+}
+.wd_tour .tourDetail{
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	line-height: 1.5;
+	box-sizing: border-box;
+    background-color: rgba(255,255,255,.7);
+    color: #333;
+    font-size: 18px;
+}
+
+.wd_desc{
+	margin: 30px 0px;
+	line-height: 30px;
+	padding: 0 15px;
+}
+
+
+
+/*================ 遊記內容 ================*/
+
+.dayContent .sideImg{
+	width: 33.33333333%;
+	margin: 0 0 20px 0px;
+	float: right;
+	overflow: hidden;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.sideImg .picCover{
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+    position: relative;
+	background-color: #333;
+}
+.sideImg .picCover img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.dayContent .article p{
+	line-height: 30px;
+}
+
+.dayContent .imgBoxs{
+	width: 100%;
+	margin: 20px auto 50px;
+	font-size: 0;
+}
+.imgBoxs .container{
+	padding: 0;
+}
+.imgBoxs .imgBox{
+	width: 33.33333333%;
+	padding: 0 15px;
+    box-sizing: border-box;
+	display: inline-block;
+	overflow: hidden;
+}
+.imgBox .imgCover{
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+    position: relative;
+	background-color: #333;
+}
+.imgBox .imgCover img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+/*================ 遊記功能 ================*/
+.wd_function{
+	width: 30%;
+	padding-left: 25px;
+	box-sizing: border-box;
+	font-size: 0;
+	text-align: center;
+	float: left;
+}
+.wd_function .funcBox{
+	position: fixed;
+	z-index: 10;
+}
+.wd_function .funcCover{
+	border: 1px solid rgba(34, 36, 38, 0.15);
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px 0 rgba(34,36,38,0.15);
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+.wd_function .wd_space{
+	width: 33.3333333%;
+	height: 75px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px 0;
+	position: relative;
+	cursor: pointer;
+	/*background-color: #fff;*/
+}
+
+.wd_function .wd_space:hover{
+	background-color: #F8F8F8;
+}
+
+.wd_function .wd_space:nth-of-type(1),
+.wd_function .wd_space:nth-of-type(2),
+.wd_function .wd_space:nth-of-type(3){
+	border-right: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.wd_function .funcIcon{
+	width: 80px;
+	min-width: 60px;
+	font-size: 0;
+	color: #888;
+	padding-top: 6px;
+}
+.funcIcon > span{
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.wd_space .funcIcon i{
+	position: relative;
+}
+.wd_space .funcIcon.click_star > .icon-star-empty:before{
+	position: relative;
+	/*top: -1.5px;*/
+	left: 13px;
+}
+.wd_space .funcIcon.click_star i> .star_score{
+	display: inline;
+	font-size: 16px;
+	position: relative;
+	left: -22px;
+    top: 1.5px;
+}
+
+.funcIcon i, .funcIcon > span{
+	width: 100%;
+	font-size: 14px;
+}
+.funcIcon i{
+	font-size: 18px;
+}
+.funcIcon .icon-heart-empty:before,
+.funcIcon .icon-star-empty:before{
+	font-weight: bold;
+}
+.wd_space:hover .funcIcon > .icon-heart-empty,
+.wd_space:hover .funcIcon .icon-heart-empty + span,
+.funcIcon.click_heart{
+	color: #E83828;
+}
+.wd_space:hover .funcIcon > .icon-star-empty,
+.wd_space:hover .funcIcon .icon-star-empty + span,
+.funcIcon.click_star{
+	color: #efac1a;
+}
+.wd_space:hover .funcIcon > .icon-block,
+.wd_space:hover .funcIcon .icon-block + span,
+.funcIcon.click_block{
+	color: #38BFC4;
+}
+.wd_space:hover .funcIcon > .icon-edit,
+.wd_space:hover .funcIcon .icon-edit + span,
+.funcIcon.click_addTr{
+	color: #f46a2f;
+}
+
+/* 實心愛心 */
+.funcIcon.click_heart i.icon-heart-empty:before{
+	content: '\e802';
+	color: #E83828;
+}
+
+#favCount{
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #999;	
+	position: absolute;
+    top: -20px;
+    left: 17px;
+    border-radius: 3px;
+    cursor: default;
+}
+#starCount{
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #999;
+	position: absolute;
+    top: -20px;
+    left: 96px;
+    border-radius: 3px;
+    cursor: default;
+}
+#starCount span{
+	position: relative;
+	line-height: 20px;
+	top: 1px;
+}
+
+#reportCount{
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #999;
+	position: absolute;
+    top: -20px;
+    left: 177px;
+    border-radius: 3px;
+    cursor: default;
+}
+
+
+/*-------------- star rating ------------------*/
+
+.starBox{
+	width: 200px;
+	height: 80px;
+	padding: 10px 3px 5px;
+	font-size: 16px;
+	background-color: #fff;
+	position: absolute;
+	top: 90px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border: 1px solid rgba(34, 36, 38, 0.15);
+	box-shadow: 0px 1px 2px 0 rgba(34,36,38,0.15);
+	display: none;
+}
+.starBox:before{
+	content: '';
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-bottom: 12px solid rgba(34, 36, 38, 0.15);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: -13px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.starBox:after{
+	content: '';
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-bottom: 12px solid #fff;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: -12px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.starBox i{
+	position: absolute;
+	right: -2px;
+	top: 0px;
+	font-size: 18px;
+}
+.starForm{
+	height: 45px;
+	line-height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.starBox #rating_btn,
+.starBox button{
+	background-image: none;
+	background-color: #fff;
+	padding: 2px 8px;
+	color: #666;
+	outline-color: #999;
+	font-family: 'Microsoft Jhenghei', sans-serif;
+	cursor: pointer;
+	position: relative;
+	z-index: 10;
+}
+.starBox #rating_btn{
+	margin-right: 60px;
+}
+.starBox button{
+	margin-top: 6px;
+	margin-left: 60px;
+}
+.starIcon{
+    display: inline-block;
+	font-size: 20px;
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	position: relative;
+}
+.starIcon  input{
+	display: none;
+}
+.starIcon > input + label {
+  /* only enough room for the star */
+  display: inline-block;
+  overflow: hidden;
+  /*text-indent: 9999px;*/
+  width: 30px;
+  height: 40px;
+  vertical-align: top;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.starIcon > input + label:before{
+	content: "\e803";
+    font-family: "fontello";
+	color: #ccc;
+	width: 30px;
+	font-size: 25px;
+	display: inline-block;
+	/*text-indent: -9999px;*/
+}
+.starIcon > input:checked ~ label:before,
+.starIcon > input + label:hover ~ label:before,
+.starIcon > input + label:hover:before{
+  content: "\e800";
+  color: #EDBF49;
+  text-shadow: 0 0 1px #aaa;
+}
+
+.starIcon > .star-clear + label{
+  text-indent: -9999px;
+  width: 15px;
+  margin-left: -15px;
+}
+
+.starIcon > .star-clear + label:before{
+  width: 15px;
+}
+.starIcon:hover > input + label:before{
+  content: "\e803";
+  color: #ccc;
+  text-shadow: none;
+}
+
+.starIcon:hover > input + label:hover ~ label:before,
+.starIcon:hover > input + label:hover:before{
+  content: "\e800";
+  color: #EDBF49;
+  text-shadow: 0 0 1px #aaa;
+}
+
+
+
+/*================ 遊記回覆 ================*/
+.reply_title{
+	width: 70%;
+	margin-top: 50px;
+	font-size: 27px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ff9e9b;
+}
+
+.wd_reply{
+	width: 70%;
+	float: left;
+	padding-top: 5px;
+}
+.reply_mem{
+	font-size: 0;
+	padding: 20px 0px 20px 0px;
+}
+
+.reply_mem + .reply_mem{
+	border-top: 1px dotted #ff9e9b;
+}
+
+.re_memInfo{
+	width: 15%;
+	padding-right: 15px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+	box-sizing: border-box;
+    text-align: center;
+}
+.re_memPic{
+	width: 40px;
+	height: 0;
+	padding-bottom: 40px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 0 auto;
+	/*box-shadow: 1px 1px 2px #777;*/
+}
+.re_memPic img{
+	width: auto;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: block;
+}
+
+.re_memName{
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.reply_mem .memRE{
+	width: 85%;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+}
+.memRE .reTxt{
+	width: calc(95% - 160px);
+	padding-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 1.4;
+	box-sizing: border-box;
+}
+.memRE .reTime{
+	width: 140px;
+	padding-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #777;
+    text-align: center;
+	box-sizing: border-box;
+}
+.memRE .reportBtn{
+	width: 5%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	line-height: 35px;
+	box-sizing: border-box;
+}
+.report_times{
+	padding-left: 10px;
+}
+.reportBtn input[type=button]{
+    vertical-align: middle;
+}
+.reply_form{
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0px 0 80px;
+	padding: 30px 0 30px 10px;
+	background-color: rgba(255, 158, 155, 0.06);
+	border-top: 1px dotted #ff9e9b;
+	border-bottom: 1px dotted #ff9e9b;
+	border-radius: 2px;
+}
+.reply_form .re_memInfo{
+	width: 12%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 0;
+}
+.reply_form form{
+	width: 88%;
+	float: left;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 0;
+}
+.reply_form textarea{
+	width: 80%;
+	border: 1px solid #ccc;
+	text-align: left;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	box-sizing: border-box;
+	resize: none;
+	outline: none;
+}
+.reply_form .re_btn{
+	width: 15%;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	padding-left: 6px;
+	box-sizing: border-box;
+}
+.re_btn input{
+	cursor: pointer;
+}
+
+/* ================ footer ==================== */
+
+footer{
+	height: 50px;
+	background-color: #333;
+	text-align:  center;
+	color: rgba(255,255,255, .7);
+	font-size: 0.85rem;
+	line-height: 50px;
+}
+footer::selection{
+	background-color: #333;
+	color: #fff;
+}
+
+
+/* ================  ==================== */
+
+
+
+@media screen and (max-width: 479px){
+
+.breadcrumb{
+    margin-top: 30px;
+    line-height: 20px;
+}
+
+
+.mainPic .picBox{
+	max-height: 160px;
+}
+
+
+.wd_mem .memName:after{
+	background-color: transparent;
+}
+
+.wd_content {
+    width: 85%;
+}
+.wd_function {
+    width: 15%;
+    padding-left: 10px;
+}
+.wd_function .wd_space{
+    width: 100%;
+}
+.wd_function .funcIcon {
+    width: 100%;
+    min-width: 60px;
+}
+.wd_function .funcIcon span{
+	font-size: 12px;
+}
+.wd_function .funcBox .container{
+	padding-right: 20px;
+	padding-left: 0;
+    /*left: 10px;*/
+    left: -5px;
+}
+
+.wd_function .wd_space:nth-of-type(1),
+.wd_function .wd_space:nth-of-type(2),
+.wd_function .wd_space:nth-of-type(3){
+    border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+    border-right: 0px;
+}
+
+.wd_space:hover .starBox {
+    display: none;
+}
+
+.funcBox #favCount,
+.funcBox #starCount{
+	display: none;
+}
+
+.starBox{
+	width: 200px;
+	height: 80px;
+	padding: 10px 3px 5px;
+	font-size: 16px;
+	position: absolute;
+	left: -316px;
+	top: 64px;
+	bottom: auto;
+	margin: auto;
+}
+
+.starBox:before{
+	content: '';
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-left: 12px solid rgba(34, 36, 38, 0.15);
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -229px;
+	margin: auto;
+}
+
+.starBox:after{
+	content: '';
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-left: 12px solid #fff;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -228px;
+	margin: auto;
+}
+
+
+.wd_info .wd_title {
+    float: none;
+}
+.wd_info .ti {
+    float: none;
+}
+.ti:before{
+	height: 0;
+}
+.ti .wd_mem{
+	width: 60%;
+    text-align: left;
+    padding: 5px 0 5px 10px;
+    box-sizing: border-box;
+}
+.wd_mem:before{
+	height: 0;
+	line-height: 0;
+}
+.wd_mem .memName{
+	width: 75%;
+	padding: 10px 0 10px 10px;
+	margin-left: 0;
+	text-align: left;
+	box-sizing: border-box;
+}
+.ti .wd_time{
+	width: 40%;
+	text-align: right;
+	margin-left: 0;
+	padding: 5px 10px 0 0;
+	box-sizing: border-box;
+}
+
+.wd_desc{
+	margin: 10px 0 15px;
+}
+
+.dayContent .sideImg{
+	width: 100%;
+	float: none;
+	padding-left: 0;
+}
+.dayContent .imgBoxs{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.imgBoxs .imgBox{
+	width: 100%;
+	padding: 15px 15px;
+}
+
+.reply_title,
+.wd_reply{
+	width: 85%;
+}
+.wd_reply .container{
+	padding: 0;
+}
+.re_memInfo{
+	padding-right: 0;
+}
+.re_memName{
+	display: none;
+}
+.reply_mem .memRE .reTxt{
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 10px;=
+}
+.reply_mem .memRE .reTime{
+	width: 75%;
+	padding: 0 10px;
+	text-align: right;
+	box-sizing: border-box;
+}
+.reply_mem .memRE .reportBtn{
+	width: 25%;
+	padding-right: 10px;
+	text-align: right;
+	box-sizing: border-box;
+}
+.reply_form{
+	position: relative;
+	height: 160px;
+}
+.reply_form textarea{
+	margin: 0;
+}
+.reply_form .re_btn{
+	width: 100%;
+	margin-top: 10px;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 15px;
+	margin: auto;
+}
+
+} /* end of (max-width:479px) */
+
+
+
+
+@media screen and (min-width: 480px){
+
+.breadcrumb{
+    margin-top: 30px;
+}
+
+
+
+.wd_mem .memName:after{
+	background-color: transparent;
+}
+.wd_content {
+    width: 85%;
+}
+.wd_function {
+    width: 15%;
+}
+.wd_function .wd_space{
+    width: 100%;
+}
+.wd_function .funcIcon {
+    width: 100%;
+    min-width: 60px;
+}
+.wd_function .funcIcon > span{
+	font-size: 12px;
+}
+.wd_function .funcBox .container{
+	padding-right: 0px;
+	padding-left: 0;
+}
+
+.wd_function .wd_space:nth-of-type(1),
+.wd_function .wd_space:nth-of-type(2),
+.wd_function .wd_space:nth-of-type(3){
+    border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+    border-right: 0px;
+}
+
+.wd_space:hover .starBox {
+    display: none;
+}
+
+
+.starBox{
+	width: 200px;
+	height: 80px;
+	padding: 10px 3px 5px;
+	font-size: 16px;
+	position: absolute;
+	left: -294px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.starBox:before{
+	content: '';
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-left: 12px solid rgba(34, 36, 38, 0.15);
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -229px;
+	margin: auto;
+}
+
+.starBox:after{
+	content: '';
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-left: 12px solid #fff;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -226px;
+	margin: auto;
+}
+
+.wd_info .wd_title {
+    float: none;
+    line-height: 50px;
+}
+.wd_info .ti {
+    float: none;
+}
+.ti:before{
+	height: 0;
+}
+.ti .wd_mem{
+	width: 60%;
+    text-align: left;
+    padding: 5px 0 5px 10px;
+    box-sizing: border-box;
+}
+.wd_mem:before{
+	height: 0;
+	line-height: 0;
+}
+.wd_mem .memName{
+	width: 75%;
+	padding: 10px 0 10px 10px;
+	margin-left: 0;
+	text-align: left;
+	box-sizing: border-box;
+}
+.ti .wd_time{
+	width: 40%;
+	text-align: right;
+	margin-left: 0;
+	padding: 5px 10px 0 0;
+	box-sizing: border-box;
+}
+
+.wd_desc{
+	margin: 10px 0 15px;
+}
+
+.dayContent .sideImg{
+	width: 100%;
+	float: none;
+	padding-left: 0;
+}
+.dayContent .imgBoxs{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.imgBoxs .imgBox{
+	width: 100%;
+	padding: 15px 15px;
+}
+
+.reply_title ,
+.wd_reply{
+	width: 85%;
+}
+.wd_reply .container{
+	padding: 0;
+}
+.re_memInfo{
+	padding-right: 0;
+}
+.reply_mem .memRE{
+	text-align: right;
+}
+.reply_mem .memRE .reTxt{
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+.reply_mem .memRE .reTime{
+	width: 75%;
+	padding: 0 10px;
+	text-align: right;
+	box-sizing: border-box;
+}
+.reply_mem .memRE .reportBtn{
+	width: 20%;
+	padding-right: 10px;
+	text-align: right;
+	box-sizing: border-box;
+}
+.reply_form{
+	position: relative;
+	height: 160px;
+}
+.reply_form textarea{
+	margin: 0;
+}
+.reply_form .re_btn{
+	width: 100%;
+	margin-top: 10px;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 15px;
+	margin: auto;
+}
+
+
+} /* end of (max-width:480px) */
+
+
+
+/*==================    ================*/
+@media screen and (max-width: 767px){
+
+.container{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.funcBox #favCount,
+.funcBox #starCount{
+	display: none;
+}
+
+} /*END of @media screen and (max-width: 767px)*/
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 768px){
+
+.container{
+	width: 100%;
+	box-sizing: border-box;
+}
+.starBox{
+	left: -315px;
+}
+
+.wd_mem .memName:after{
+	background-color: transparent;
+}
+.funcBox #favCount,
+.funcBox #starCount{
+	display: none;
+}
+
+
+} /*END of @media  screen and (min-width: 768px) */
+
+
+/*==================    ================*/
+@media screen and (min-width: 960px){
+
+.wd_function{
+    width: 30%;
+}
+.wd_content{
+    width: 70%;
+}
+.wd_function{
+    width: 30%;
+}
+.wd_function .funcCover{
+	left: -10px;
+}
+
+.wd_function .wd_space{
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.wd_function .funcBox .container{
+	padding-right: 0px;
+	padding-left: 0;
+}
+
+.wd_function .wd_space:nth-of-type(1),
+.wd_function .wd_space:nth-of-type(2),
+.wd_function .wd_space:nth-of-type(3){
+	border-right: 1px solid rgba(34, 36, 38, 0.15);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.wd_function .funcIcon{
+    /*width: 70px;*/
+    padding-top: 8px;
+}
+
+.wd_function .funcIcon > span{
+    font-size: 14px;
+}
+
+
+.funcBox #favCount,
+.funcBox #starCount{
+	display: inline;
+}
+
+.starBox{
+	width: 200px;
+	height: 80px;
+	padding: 10px 3px 5px;
+	font-size: 16px;
+	position: absolute;
+	top: 90px;
+	left: -58px;
+	right: 0;
+    bottom: auto;
+	margin: auto;
+}
+
+.starBox:before{
+	content: '';
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-bottom: 12px solid rgba(34, 36, 38, 0.15);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: -22px;
+	left: 0;
+	right: 0;
+    bottom: auto;
+	margin: auto;
+}
+
+.starBox:after{
+	content: '';
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-bottom: 12px solid #fff;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: -21px;
+	left: 0;
+	right: 0;
+    bottom: auto;
+	margin: auto;
+}
+
+.wd_info .wd_title{
+    float: left;
+}
+.wd_info .ti{
+    float: right;
+}
+.ti:before{
+    height: 60%;
+}
+.ti .wd_mem{
+	width: auto;
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    text-align: center;
+}
+.wd_mem:before {
+    height: 40px;
+    line-height: 40px;
+}
+.wd_mem .memName{
+    width: auto;
+    padding: 0;
+    margin: 0 15px 0 10px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.ti .wd_time {
+    width: auto;
+    text-align: left;
+    margin: 0 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wd_desc {
+    margin: 30px 0;
+}
+
+.dayContent .sideImg{
+    width: 33.33333333%;
+    float: right;
+    padding-left: 20px;
+}
+.imgBoxs .imgBox {
+    width: 33.33333333%;
+    padding: 0 15px;
+}
+
+.reply_title,
+.wd_reply {
+    width: 70%;
+}
+.reply_mem .memRE{
+	text-align: right;
+}
+.reply_mem .memRE .reTxt{
+	text-align: left;
+}
+.reply_mem .memRE .reportBtn{
+	width: 10%;
+}
+.reply_form{
+	height: 140px;
+	padding-top: 35px;
+}
+.reply_form .re_btn {
+    width: 15%;
+    margin-top: 0;
+    padding: 6px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+} /*END of @media  screen and (min-width: 992px)*/
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 1200px){
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.breadcrumb{
+    margin-top: 50px;
+}
+
+.wd_function .funcCover{
+	left: 10px;
+}
+
+.wd_function .wd_space{
+    width: 80px;
+}
+.wd_function .funcBox .container{
+	padding-right: 0px;
+	padding-left: 0;
+}
+
+.wd_function .wd_space:nth-of-type(1),
+.wd_function .wd_space:nth-of-type(2),
+.wd_function .wd_space:nth-of-type(3){
+	border-right: 1px solid rgba(34, 36, 38, 0.15);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.wd_function .funcIcon{
+    width: 80px;
+    padding-top: 8px;
+}
+
+
+.wd_mem .memName:after{
+	content: '';
+	width: 1px;
+	height: 30px;
+	background-color: #ccc;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 8px;
+}
+
+
+} /*END of @media screen and (min-width: 1200px)*/

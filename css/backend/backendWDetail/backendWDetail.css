@@ -1,0 +1,240 @@
+.container{
+	width: 1170px;
+/*	padding: 0 15px;*/
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+
+.mwd_form{
+	margin: 10px 0 30px;
+	padding: 30px 50px;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 3px #ccc;
+}
+.mwd_form form{
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.mwd_form label,
+.mwd_form textarea,
+.mwd_form input[type=text]{
+	font-size: 16px;
+}
+
+.mwd_form textarea{
+	resize: none;
+}
+
+.mwd_form input[type=text],
+.mwd_form textarea{
+	outline: none;
+	border: 1px solid #ccc;
+	padding: 5px;
+	background-color: rgba(255,255,255,.6);
+}
+.mwd_form input[type=text]:focus,
+.mwd_form textarea:focus{
+	background-color: rgba(255,255,255, 1);
+}
+.mwd_form input[type=file],
+.mwd_form input[type=submit]{
+	outline: none;
+}
+
+.mwd_noteInfo{
+	font-size: 0;
+	padding-bottom: 20px;
+}
+
+.mwd_noTitle, .mwd_mainImg{
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.mwd_mainImg{
+	vertical-align: top;
+}
+.mwd_mainImg .mwd_img_pre{
+	width:45%;
+	position: relative;
+	display: inline-block;
+    vertical-align: top;
+	height:0;
+	padding-bottom: 45%;
+}
+.mwd_noteInfo p{
+	padding: 10px 0;
+}
+.mwd_noteInfo .mwd_desc label{
+	vertical-align: top;
+	position: relative;
+	top: 5px;
+}
+ .mwd_mainImg > span{
+	 vertical-align: middle;
+ }
+ .mwd_mainImg #mainimg{
+	display: none;
+}
+ .mwd_mainImg span.input-file{
+	 display: inline-block;
+ }
+
+.mwd_content .mwd_block+.mwd_block{
+	margin-top: 50px;
+}
+.mwd_content .mwd_ctDay{
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.mwd_content .mwd_tour{
+	height: 80px;
+	padding: 0 20px;
+	margin-bottom: 30px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	font-size: 0;
+}
+.mwd_content .mwd_tour:before{
+	content: '';
+	width: 0;
+	height: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.mwd_content .mwd_tour p{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 18px;
+}
+
+
+
+.mwd_ct{
+	margin-bottom: 30px;
+}
+.mwd_ct textarea{
+	width: 100%;
+	height: 300px;
+	resize: vertical;
+	box-sizing: border-box;
+}
+.mwd_ct p{
+	padding-bottom: 10px;
+}
+
+.mwd_selectPics{
+	font-size: 0;
+}
+.mwd_selectPics .mwd_image{
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	text-align: center;
+}
+.mwd_selectPics .input-file{
+	padding: 0 10px;
+	margin-bottom: 10px;
+	font-size: 0;
+	position: relative;
+}
+.input-file .uploadImg{
+	display: none;
+}
+.input-file .uploadImg + label{
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #888;
+	color: #555;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: left;
+}
+.input-file label.success,
+.input-file label:hover{
+	color: #f46a2f;
+	border-color: #f46a2f;
+}
+.input-file .file_name{
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: left;
+	padding-left: 5px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.mwd_image .mwd_img_pre{
+	margin: 0 auto;
+	position: relative;
+	font-size: 0;
+	max-width: 222px;
+}
+.mwd_img_pre .cancelBtn{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -3px;
+	right: 15px;
+	border-radius: 50%;
+	background-image: url(../../../images/bg2.png);
+	border: 2px solid #f46a2f;
+	cursor: pointer;
+	z-index: 5;
+}
+.mwd_mainImg .mwd_img_pre .cancelBtn{
+	right: 0px;
+}
+
+.mwd_img_pre .cancelBtn i:before{
+	vertical-align: middle;
+	font-size: 20px;
+	margin: 0;
+	color: #f46a2f;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.mwd_img_pre .preview{
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.mwd_formBtn{
+	margin-top: 40px;
+	line-height: 80px;
+	text-align: center;
+}
+.mwd_formBtn input[type=submit]{
+	padding: 5px 10px;
+	font-size: 16px;
+	color: #fff;
+	background-color: transparent;
+	color: #333;
+	border: 1px solid #333;
+	font-family: 'Microsoft Jhenghei', sans-serif;
+	cursor: pointer;
+}
+.mwd_formBtn input[type=submit]:hover{
+	color: #f46a2f;
+	border-color: #f46a2f;
+}

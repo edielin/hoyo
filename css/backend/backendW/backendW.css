@@ -1,0 +1,196 @@
+/*bw跳窗*/
+.biAddBtn{
+    display:block;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.biAddBtn .bwadd{
+    display:inline-block;
+    cursor: pointer;
+    height: 18px;
+    line-height: 18px;
+}
+.bwcup{
+    display: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(0,0,0,.75);
+    z-index: 99;
+}
+.outbwPopups{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin:auto;
+    width:880px;
+    height: 570px;   
+}
+.bwPopups{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;  
+    width:100%;
+    height: 100%;
+    overflow-x:hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding:20px;
+    box-sizing: border-box;
+    background-color:#fff;
+    outline: 1px solid #333;
+}
+.bwPopups .bwstep{
+	margin:50px 0 25px;
+}
+.bwPopups .bwstep span{
+    font-size: 1.25rem;
+	padding:5px 25px;
+    vertical-align: middle;
+    color: #336699;
+    font-weight: bold;
+}
+.bwselect{
+    width:100%;
+}
+.bwselect td label{
+    cursor: pointer;
+}
+/*排列*/
+.biOrder{
+    width: 1170px;
+    margin-bottom:10px;
+    display: inline-block;
+}
+.biOrder span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.biSelect{
+    height:20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/*有重複區塊*/
+div[class*=filter] {
+    position: relative;
+}
+
+.drowStyle {
+    float: right;
+    font-family: 'Microsoft JhengHei';
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 28px;
+    width: 172px;
+    padding: 0 0 0 0px;
+    text-align-last: center;
+    background-color: #075f9b;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.filterFirst{
+    float: left;
+}
+
+.filterFirst img, .filterNth img {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+}
+/*表單*/
+.bwLists{
+    width:100%;
+}
+
+/*按鈕*/
+a.lbtn-gray{
+    background-color: transparent;
+    outline:1px solid #333;
+    border:none;
+    padding:5px 15px;
+    font-size: 0.85rem;  
+    font-family: 'Microsoft JhengHei';
+    color:#333;  
+}
+
+/*跳窗XX*/
+.LM_cancel{
+    width: 22px;
+    height: 22px;
+    background-color: #F76F32;
+    position: absolute;
+    top:-11px;
+    right: -11px;
+    line-height: 22px;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cancelbtn{
+    color: #fff;     
+}
+
+/*按鈕間距*/
+.btn-margin{
+    margin: 0 2px;
+}
+
+/*radio*/
+
+.tour{
+    display: none;
+}
+.icon-ok{
+    color:#eee;
+    margin-right: 5px;
+}
+.tour:checked+label i{
+    color:#336699;
+    transition: 0.3s;
+}
+/*.biRight table .firstHead th:first-child{
+    width:100px;
+}
+.biRight table .firstHead th:nth-child(2){
+    width:100px;
+}
+.biRight table .firstHead th:nth-child(4){
+    width:126px;
+}
+.biRight table .firstHead th:nth-child(5){
+    width:170px;
+}
+.biRight table .firstHead th:last-child{
+    width:236px;
+}*/
+
+
+.biRight table tr td{
+    padding: 20px 10px;
+}
+.biRight table tr td:last-child{
+    font-size: 0;
+}
+.closeBtn, a.lookBtn{
+    cursor: pointer;
+    outline: none;
+    border:none;
+    font-weight: 600;
+    color:#fff;
+    background-color: #075f9b;  
+}
+
+.closeBtn:hover, a.lookBtn:hover{
+    background-color: #aa3535;
+}

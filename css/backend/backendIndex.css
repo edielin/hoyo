@@ -1,0 +1,365 @@
+/*body基本設定*/
+body{
+    /*max-width:1170px;*/
+    margin:auto;
+    font-family: 'Microsoft JhengHei',arial; 
+    background-image:url('../../images/bg2.png');
+}
+
+html, body {
+    height: 100%;
+}
+#hoyo_wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+#hoyo_header{
+    position: relative;
+}
+#hoyo_content {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
+}
+#hoyo_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.biBody{
+    width:1170px;
+    margin:auto;
+    font-size: 16px;
+    font-family: 'Microsoft JhengHei',arial;    
+}
+/*--------------------header start----------------------*/
+.biBody .bimenu{
+    width:100%;
+    height:100px;
+    line-height: 100px;
+/*    background-color:rgba(255,255,255,.3);*/
+}
+.bimenu .biLogo{
+    float:left;
+    display: block;
+    height:100px;
+}
+.bimenu .biLogo img{
+    width: 195px;
+    height: auto;
+    padding-top: 10px;
+}
+.bimenu .biLogOut{
+    float: right;
+}
+.bimenu .biLogOut input{
+    font-size: 1rem;
+}
+.logOutbtn{
+    text-align: center;
+    padding:5px 10px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    text-decoration: none;
+    width:100px;
+    color:#fff;
+    background-color: #075f9b;
+    margin:auto;
+    border:none;
+    cursor:pointer;
+    outline: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+.biLogOut form .biName{
+    font-family: 'Microsoft JhengHei',arial; 
+    padding-right:15px;
+    color:#333;
+}
+
+/*---------------------biLeft start------------------*/
+.biContentBody{
+    font-size: 0;
+    height:100%;
+}
+.biContentBody .biLeft{
+    display: block;
+    background-color: #075f9b;
+    vertical-align: top;
+    width:100%;
+}
+.biLeft ul{
+    font-size: 0;
+    width:100%;
+}
+.biContentBody li{
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+    width:16.66666666666%;
+}
+.biContentBody li a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    padding: 15px 15px 15px 15px;
+    width:100%;
+    box-sizing: border-box;
+}
+.biContentBody li+li{
+    border-left:1px solid #fff;
+    box-sizing: border-box;
+}
+.logOutbtn:hover,.biLeft li a:hover{
+    background-color: #aa3535;
+    color:#fff;
+}
+
+.biContentBody li a.here{
+    background-color: #aa3535;
+    color:#fff; 
+}
+/*-------------------biRight start------------------------------*/
+.biContentBody .biRight{
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    width:100%;
+    box-sizing: border-box;
+    margin:50px auto;
+}
+.biRight .biSearch{  
+    display: inline-block;
+    vertical-align: middle;
+    /*記得要推位置*/
+}
+
+.biRight .BL_select{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.PH2{
+    font-size: 2rem;
+    margin:0 auto 15px;
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+}
+.bL_out{
+    margin-bottom: 10px;
+}
+/*---------------------table設定-----------------------------*/
+
+.biRight table tr th{
+    font-weight: 600;
+    background-color: #333;
+ /*   border-bottom: 3px solid #fff;*/
+    color:#eee;
+    padding: 15px 0;
+    border-left: 1px solid #ccc;
+}
+
+.biRight table tr th:first-child{
+    border: none;
+}
+
+.biRight table tr td{
+    vertical-align: middle;
+    padding:10px 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.biRight table tr td:last-child{
+    font-size: 0;
+}
+.biRight table tr td:last-child{
+    font-size: 1rem;
+}
+table{
+    border: 1px solid #333;
+}
+
+td{
+    border-bottom: 1px dashed #333;
+}
+/*-------------------頁尾設定--------------------*/
+.bifooter{
+    height:170px;
+    width:1170px;
+    margin:auto;
+    background-size: contain;
+    /*background-color: rgba(0,0,0,.75);*/
+    background-image: url(../../images/10182977-berg-set.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.bifooter .bitrainImg{
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    animation: runtrain 7s linear infinite;
+}
+@keyframes runtrain{
+    from{
+        right:-10%;
+    }
+    to{
+        right:110%;
+    }
+}
+.bitrainImg img{
+    height:15px;
+}
+/*------------------font-----------------------*/
+.fontFamily{
+    font-family: '微軟正黑體',arial;
+}
+.fW1{
+    font-weight: 100;
+}
+.fW2{
+    font-weight: 200;
+}
+.fW3{
+    font-weight: 300;
+}
+.fW4{
+    font-weight: 400;
+}
+.fW5{
+    font-weight: 500;
+}
+.fW6{
+    font-weight: 600;
+}
+.fW7{
+    font-weight: 700;
+}
+.fW8{
+    font-weight: 800;
+}
+.fW9{
+    font-weight: 900;
+}
+
+/*-----------------biRight按鈕---------------------*/
+/*按鈕的樣式*/
+.btn-gray{
+    background-color: transparent;
+    outline:1px solid #333;
+    border:none;
+    padding:5px 15px;
+    font-size: 0.85rem;  
+    font-family: 'Microsoft JhengHei';     
+}
+.biRight input[type='checkbox']{
+    display: none;
+}
+
+/********* input的 style ***********/
+.input_style{
+    outline: none;
+    background-color: transparent;
+    border:1px solid #999;
+    height: 20px;
+    margin-bottom:5px;
+    padding:5px;
+    text-align: center;
+    width: 140px;
+}
+
+/*--------------biRight 換頁------------------*/
+.biRight>.pages{
+    padding-top:25px;
+    text-align: center;
+    font-size:0;
+}
+
+.biRight>.pages a{
+    color: #333;
+    padding:4px 8px;
+    outline: 1px solid #333;
+    font-size: 0.85rem;  
+    margin:0 2px;
+}
+
+/*------------clear------------------------*/
+.clearfix{
+    clear:both;
+}
+
+
+
+/* ================ 將footer固定至底部 ==================== */
+/*html, body {
+    height: 100%;
+}
+#hoyo_wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+#hoyo_header{
+    position: relative;
+}
+#hoyo_content {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
+}
+#hoyo_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/
+
+.td_memNo{
+    font-weight: 600;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 27px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.td_memNo:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;right: 0;
+    margin: auto;
+    width: 60%;
+    height: 2px;
+    background-color: rgba(0,0,0,.3);
+}
+
+.th_No,.th_memNo{
+    width:85px;
+}
+.th_Time{
+    width:135px;
+}
+.th_Todo{
+    width: 230px;
+}
+.th_badBad{
+    width: 100px;
+}
+.th_who{
+    width: 150px;
+}
+.th_Img{
+    width: 140px;
+}

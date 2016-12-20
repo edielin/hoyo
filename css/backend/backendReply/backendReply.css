@@ -1,0 +1,87 @@
+
+.brLists{
+	width:100%;
+}
+.brLists tr td{
+    text-align: justify;
+    font-size: 1rem;
+}
+.brcontent{
+	width:450px;
+}
+.brLists tr td:nth-child(3) p{
+    width:100%;
+   	height:50px;
+    line-height: 1.5;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+/*搜尋*/
+.brSearch{
+	text-align: right;
+	font-size: 0;
+    margin-bottom: 10px;
+}
+/*搜尋文字框*/
+.brtext{
+	width:162px;
+	height:25px;
+	display: inline-block;
+	vertical-align:middle;
+	padding:5px;
+	height:30px;
+	border: 1px solid rgba(0,0,0,0);
+	box-sizing: border-box;
+	transition: .5s;
+	outline: none;
+}
+
+.brtext:focus{
+	border: 1px solid #075f9b;
+	width: 290px;
+}
+
+/*搜尋按鈕*/
+.brsubmit{
+	display: inline-block;
+	vertical-align:middle;
+	outline: none;
+	border: none;
+	font-weight: 600;
+	color:#fff;
+	background-color: #075f9b;
+	cursor:pointer;
+	height: 30px;
+}
+
+.brsubmit:hover{
+	background-color: #aa3535;	
+}
+/*查看按鈕*/
+.brbtn{
+    color:#333;
+}
+
+/*按鈕間距*/
+.btn-margin{
+	margin: 0 2px;
+}
+
+.closeBtn,.brbtn{
+	outline: none;
+	border:none;
+	font-weight: 600;
+	color:#fff;
+	background-color: #075f9b;
+	cursor: pointer;
+}
+
+.closeBtn:hover,.brbtn:hover{
+	background-color: #aa3535;
+}
+
+
+
+.biRight table tr td {
+    padding: 20px 10px;
+ }

@@ -1,0 +1,118 @@
+/*後端登入頁面CSS*/
+ body{
+    font-family: 'Microsoft JhengHei',arial; 
+    background-image:url('../../images/bg2.png');
+}
+
+.bBody{
+    font-size: 16px;
+    font-family: '微軟正黑體',arial;
+}
+.bContainer{
+    height:100vh;   
+    text-align: center;
+}
+.bContainer form{
+    width: 356px; 
+    padding:15px;
+    background-color: rgba(255,255,255,0.8);
+    border: 1px solid #ededed;
+    box-shadow: 0 1px 2px #ccc;
+    display:inline-block;
+    vertical-align: middle;
+}
+.bContainer:before{
+    content:'';
+    width:0px;
+    height:100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.bContainer .bloginArea{
+    text-align: center;
+    margin: auto;
+}
+.bContainer .bloginArea caption{
+    font-size:2rem;
+    display: block;
+    margin:0 15px;
+    padding:15px 0;
+    border-bottom:1px solid #aaa;
+}
+.bContainer .bloginArea tr{
+    margin: 15px;
+    display: block;
+}
+.bContainer .bloginArea td{
+    display: block;
+    width:100%;
+}
+.bloginArea td input{
+    outline: none;
+    font-size: 1rem;;
+    padding:10px;
+    border:1px solid #ccc;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+.bloginArea td input:focus{
+    border:1px solid #075f9b;
+}
+
+.bloginArea .bButton{
+    cursor: pointer;
+    font-size: 1rem;
+    border:1px solid #ccc;
+    height:50px;
+    background-color:#075f9b;
+    color: #fff;
+    width:100%;
+    display: block;
+}
+
+.back_Logintitle{
+    font-size: 18px;
+}
+
+
+/*font-family*/
+.fontFamily{
+    font-family: '微軟正黑體',arial;
+}
+.fW6{
+    font-weight: 600;
+}
+
+
+
+
+/*rwd*/
+@media screen and (max-width: 479px){
+    body{
+        padding:0;
+    }
+    .bContainer form{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .bContainer:before{
+    content:'';
+    height:0;
+    }
+}       
+
+@media screen and (min-width: 480px){
+    body{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 970px){
+
+}
+
+@media screen and (min-width: 1170px){
+
+}

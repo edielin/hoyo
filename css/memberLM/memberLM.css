@@ -1,0 +1,695 @@
+*{
+/*	outline: 1px solid #f00;*/
+}
+a{
+	text-decoration: none;
+}
+.LM_ch{
+	font-family:'Microsoft JhengHei';
+	letter-spacing: 0;
+}
+.clearfix{
+	width: 100%;
+	clear:both;
+}
+body{
+	background-image: url('../../images/bg2.png');
+}
+footer{
+	height: 50px;
+	background-color: #333;
+	text-align:  center;
+	color: rgba(255,255,255, .7);
+	font-size: 0.85rem;
+	line-height: 50px;
+}
+footer{
+	margin-top: 50px;
+}
+.clear_wrapper{
+	font-size: 0;
+}
+/*================ 麵包屑 ================*/
+.breadcrumb{
+	height: 50px;
+	margin-top: 50px;
+	line-height: 50px;
+	color: #666;
+	box-sizing: border-box;
+}
+.breadcrumb a{
+	font-size: 14px;
+	color: #666;
+}
+.breadcrumb a:hover,
+.bread_active{
+	padding-bottom: 1px;
+	border-bottom: 1px solid #999;
+}
+/*================ end麵包屑 ================*/
+
+
+
+/* ================ 將footer固定至底部 ==================== */
+html, body {
+    height: 100%;
+}
+#hoyo_wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+#hoyo_header{
+    position: relative;
+}
+#hoyo_content {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
+}
+#hoyo_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/*改地標介紹的標題大小*/
+.pH2{   
+	font-size: 28px;
+	line-height: 40px;
+	position: relative;
+}
+#ct_pad{
+ padding: 0 10px;
+ position: relative;
+}
+.headerTitle{
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #ccc;
+}
+.w_addNoteBtn{
+ padding-left: 7px;
+ line-height: 31px;
+ border: 2px solid #ff9363;
+ border-radius: 3px;
+ position: absolute;
+ top: 3px;
+ right: 0px;
+ cursor: pointer;
+ font-size: 0;
+}
+.w_addNoteBtn a{
+ display: inline-block;
+ vertical-align: middle;
+ color: #F76F32;
+ font-size: 16px;
+ font-weight: bold;
+}
+.w_addNoteBtn .icon-plus{
+ font-size: 20px;
+ color: #F76F32;
+ vertical-align: middle;
+}
+/*===========================*/
+.ML_container input[type="text"],.ML_container input[type="number"]{
+	border:none;
+	outline: 1px solid #999;
+   	background-position: -50px 0px;
+   	background-repeat: no-repeat;
+	background-color: #fff;
+	background-position: -40px 5px;
+	height: 30px;
+	font-size: 0.85rem;
+	text-align: center;
+}
+
+.ml_name{
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+}
+#LM_name{
+	width: 260px; 
+	background-image: url('../../images/memberLM/location.png');
+}
+
+.ml_type{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 33px;
+}
+.ml_type_T{
+	font-size: 1rem;
+	color:#fff;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 80px;
+	background-color: hsla(1, 76%, 65%, 1);
+	display: inline-block;
+	vertical-align: middle;
+}
+.ml_type_C{
+	display: inline-block;
+	vertical-align: middle;
+}
+.ML_container input[type="radio"]{
+	display: none;
+}
+.ML_isCheck{
+	font-size:1rem;
+	text-align: center;
+	display: inline-block;
+	padding: 6px;
+	margin:0 4px;
+	background-color: #fff;
+	outline:3px solid transparent;
+}
+.ML_isCheck:hover{
+	outline: 3px solid hsla(1, 76%, 65%, 1);
+	transition: .5s;
+}
+.LM_gray{
+	outline: 3px solid hsla(1, 76%, 65%, 1);
+}
+.out1{
+	font-size: 0;
+	margin-top: 10px;
+}
+
+
+.pl9{
+	padding-left: 1%;
+}
+.ML_phone,.ML_cellphone{
+	display: inline-block;
+	width: 30%;
+}
+.ML_opentime{
+	width: 40%;
+}
+.ML_phone,.ML_cellphone,.ML_opentime{
+	display: inline-block;
+	box-sizing: border-box;
+}
+#LM_phone{
+	background-image: url('../../images/memberLM/phone.png');
+	width: 100%;
+}
+#LM_cellphone{
+	background-image: url('../../images/memberLM/cellphone.png');
+	width: 100%;		
+}
+#LM_opentime{
+	background-image: url('../../images/memberLM/time.png');
+	width: 100%;	
+}
+
+
+
+
+
+
+
+.ML_address{
+	width: 100%;
+	margin-top:15px;
+}
+#LM_address{
+	width: 889px;
+	background-image: url('../../images/memberLM/address.png');	
+}
+.ml_stay{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top:15px;	
+}
+.ml_stay_T,.ml_eat_T,.ml_ticket_T,.ml_long_T{
+	color:#fff;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 150px;
+	background-color: hsla(1, 76%, 65%, 1);
+	font-size: 1rem;
+}
+.ml_stay_C{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top:15px;	
+}
+.ml_stay_item{
+	display: inline-block;
+	vertical-align: middle;	
+}
+.ml_stay_all{
+	width: 174px;
+	background-image: url('../../images/memberLM/pay.png');	
+}
+.longi{
+	font-size: 0;
+}
+.ml_eat{
+	margin-top: 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.ml_eat_C{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 15px;
+}
+#LM_avgcost{
+	width: 176px;
+	background-image: url('../../images/memberLM/pay.png');		
+}
+.ml_ticket{
+	margin-top: 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.ml_ticket_C{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 15px;
+}
+.ml_long{
+	margin-top: 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.ml_long_C{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 15px;
+}
+.ML_adultcost,.ML_childcost{
+	display: inline-block;
+	vertical-align: middle;
+}
+#LM_adultcost,#LM_childcost{
+	width: 176px;
+	background-image: url('../../images/memberLM/pay.png');		
+}
+
+#LM_longitude,#LM_latitude{
+	width: 176px;
+	background-image: url('../../images/memberLM/latilogi.png');	
+}
+.ml_textarea{
+	display: inline-block;
+	vertical-align: top;
+}
+.ml_textarea_T{
+	color:#fff;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 150px;
+	background-color: hsla(1, 76%, 65%, 1);
+}
+#LM_description{
+	width: 730px;
+	height: 180px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;	
+	border: none;
+	outline:1px solid #999;
+	background-color: #fff;
+	padding:10px;
+	box-sizing: border-box;
+	resize: none;
+}
+.ml9{
+	margin-left:9px;
+}
+/*********上傳圖片************/
+
+
+input[type="file"]{
+	display: none;
+}
+
+.LM_label{
+	display: block;
+	color:hsla(1, 76%, 65%, 1);
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+
+	outline: 1px solid hsla(1, 76%, 65%, 1);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	cursor: pointer;
+	margin:0 auto;
+}
+
+.LM_label:hover{
+	outline-color: hsla(1, 76%, 65%, 1);
+	background-color: hsla(1, 76%, 65%, 1);
+	color:#fff;
+}
+.LM_flie label:hover,
+.LM_label.success{
+	outline-color: hsla(1, 76%, 65%, 1);
+	background-color: hsla(1, 76%, 65%, 1);
+	color:#fff;
+}
+
+
+.LM_img_pre{
+	margin-top: 15px;
+	position: relative;
+}
+.LM_img_pre .cancelBtn{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-radius: 50%;
+	background-image: url(../../images/bg2.png);
+	border: 2px solid #e43b36;
+	cursor: pointer;
+	z-index: 5;
+}
+.LM_img_pre .cancelBtn i:before{
+	font-size: 20px;
+	vertical-align: middle;
+	margin: 0;
+	color: #e43b36;
+	position: relative;
+	top:  -1px;
+	left: 0px;
+}
+.LM_image_out{
+	margin-top: 25px;
+	font-size: 0;
+}
+
+.LM_image{
+	width: 222px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1rem;
+}
+.preview{
+	max-width: 222px;
+	max-height: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	margin:0 auto;
+}
+
+.LM_img_pre{
+	text-align: center;
+}
+.LM_form{
+	text-align: center;
+	margin: 30px 0 80px 0;
+}
+.LM_btn{
+	width: 125px;
+	border: none;
+	font-family: 'Microsoft JhengHei';
+	font-size:1rem;	
+	color:#333;
+	outline: 1px solid #333;
+	height: 30px;
+	padding: 0 20px 0 40px;
+	background-color: transparent;
+	margin: 0 5px;
+	cursor: pointer;
+	text-align: center;
+}
+.out_ok{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;	
+}
+.icon{
+	position: absolute;
+}
+.icon-ok{
+	font-size: 1.2rem;
+	top:4px;
+	left:10px;
+}
+/*.canbtn:before{
+    font-size: 25px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    bottom: 0;
+    margin: auto;
+}*/
+.canbtn{
+	position: absolute;
+	top:8px;
+	left:15px;
+}
+
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color: #666;
+    font-family: 'Microsoft JhengHei';
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/*中間地帶改成和手機一樣所以改了一下media  表單rwd好痛苦阿 */ 
+
+@media screen and (max-width: 969px){
+.ML_container{
+	width: 100%;
+	margin:0 auto;
+	padding: 0 15px;
+	box-sizing: border-box;		
+}
+.ml_w{
+	font-size: 0;
+}
+.ml_name{
+	margin-left: 0;
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+#LM_name{
+	width: 100%;
+	box-sizing: border-box;
+}		
+.ml_type{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-left: 0px;		
+}
+.ml_type_C{
+	margin-left: 10px;
+}
+.out1{
+	font-size: 0;
+	width: 100%;
+	margin-top: 0px;
+}
+.ML_phone,.ML_cellphone{
+	width: 100%;
+}
+.ML_opentime{
+	width: 100%;
+}
+.ML_phone,.ML_cellphone,.ML_opentime{
+	padding: 5px;
+	box-sizing: border-box;
+}
+#LM_phone{
+	width: 100%;
+	box-sizing: border-box;
+	background-image: url('../../images/memberLM/phone.png');
+}
+#LM_cellphone{
+	width: 100%;
+	box-sizing: border-box;
+	background-image: url('../../images/memberLM/cellphone.png');
+}
+#LM_opentime{
+	width: 100%;
+	box-sizing: border-box;
+	background-image: url('../../images/memberLM/time.png');
+}
+
+
+
+
+.ML_address{
+	width: 100%;
+	margin-top: 0px;
+	padding: 5px;
+	box-sizing: border-box;		
+}
+#LM_address{
+	width: 100%;
+	box-sizing: border-box;
+}
+.ml_stay{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 0;	
+}	
+.ml_stay_T,.ml_eat_T,.ml_ticket_T,.ml_long_T{
+	width: 100%;
+}
+.ml_stay_all{
+	width: 100%;
+	box-sizing: border-box;
+}
+.ml_stay_C{
+	margin-top: 0;
+	width: 100%;
+}
+.ml_stay_item{
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	padding:5px;
+	box-sizing: border-box;
+}
+.ml_eat{
+	width: 100%;
+	padding:5px;
+	box-sizing: border-box;
+	margin-top: 0;
+}
+.ml_eat_C{
+	width: 100%;
+	padding:5px;
+	box-sizing: border-box;
+	margin-top: 0;
+}
+#LM_avgcost{
+	width: 100%;
+	box-sizing: border-box;
+}
+.ml_ticket{
+	width: 100%;
+	font-size: 1rem;
+	margin-top: 0;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.ml_ticket_C{
+	margin-top: 0px;
+	width: 100%;
+}
+.ml_long{
+	width: 100%;
+	font-size: 1rem;
+	margin-top: 0;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.ML_adultcost,.ML_childcost{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 0px;
+	width: 50%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+#LM_adultcost,#LM_childcost{
+	width: 100%;
+	box-sizing: border-box;
+}	
+
+#LM_longitude,#LM_latitude{
+	width: 100%;
+	box-sizing: border-box;
+}	
+
+.ml_textarea{
+	width: 100%;
+	font-size: 1rem;
+	margin-top: 0;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.ml_textarea_T{
+	width: 100%;
+}
+#LM_description{
+	width: 100%;
+	margin:10px auto 0;		
+}
+.LM_image_out{
+	margin-top: 20px;
+}
+.LM_image{
+	width: 100%;
+	font-size: 1rem;
+}
+.breadcrumb{
+    margin-top: 30px;
+}
+.LM_file{
+	margin-bottom: 10px;
+}
+.ml_long_C{
+	margin-top: 0px;
+	width: 100%;
+}
+.ml9{
+	margin-left: 0px;
+}
+
+
+}
+/*@media screen and (min-width: 480px){
+	.ML_container{
+		width: 100%;
+		margin:0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;		
+	}
+}*/
+
+@media screen and (min-width: 970px){
+	.ml_w{
+		width: 890px;
+		margin:0 auto;
+	}
+}
+
+@media screen and (min-width: 1170px){
+	.ML_container{
+		width: 1170px;
+		margin:0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;		
+	}
+    .breadcrumb{
+        margin-top: 50px;
+    }		
+
+}
+
+
+.drowStyle{
+	background-color: hsla(1, 76%, 65%, 1);
+}
+
+

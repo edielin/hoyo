@@ -1,0 +1,642 @@
+.LM_ch{
+	font-family:'Microsoft Jhenghei','微軟正黑體';
+	letter-spacing: 0;
+}
+.clearfix{
+	width: 100%;
+	clear:both;
+}
+body{
+	font-family: 'Microsoft Jhenghei', sans-serif;
+	background-image: url('../../images/bg2.png');
+}
+footer{
+	height: 50px;
+	background-color: #333;
+	text-align:  center;
+	color: rgba(255,255,255, .7);
+	font-size: 0.85rem;
+	line-height: 50px;
+}
+footer{
+	margin-top: 50px;
+}
+
+/* 願望清單 */
+
+#wishList2{
+	position: fixed;
+	z-index: 995;
+	bottom: 0;
+	left: 15px;
+	cursor: pointer;
+}
+
+#wishList_box:hover{
+	display: block;
+}
+
+#wishList2 #wishQty2{
+	position: absolute;
+	top: 10px;
+	right: 3px; left: 1px; margin:auto;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #333;
+	font-family: Tahoma;
+	font-size: 1.3rem;
+}
+
+#wishList_box{
+	color: #333;
+	position: fixed;
+	height: 200px;
+	width: 200px;
+	padding: 2.5px 10px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 3px solid rgba(228, 59, 54, 1.0);
+	z-index: 996;
+	bottom: 10px;
+	left: 85px;
+	cursor: default;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+	background-color: rgba(255,255,255,.7);
+	display: none;
+}
+
+#wishList_box:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: -18px;
+	width: 18px;
+	height: 100px;
+}
+
+#wishList_box .wishListRow{
+	margin-top: 2.5px;
+	background-color:  rgba(255,255,255,.7);
+	font-size:0px;
+	height: 25px;
+}
+
+#wishListRow_box{
+	overflow-y: auto;
+	overflow-x: none; 
+	margin-top: 30px;
+	height: 152.5px;
+}
+#wishListRow_box::-webkit-scrollbar {display:none}
+
+
+#wishList_box .wishListRow_title:first-child{
+	position: absolute;
+	top: 2.5px;
+	border-radius: 5px 5px 0 0;
+	margin-top:5px; 
+	color: #fff;
+	background-color: rgba(228, 59, 54, 1);
+}
+
+.what_line,.where_name{
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.what_line{
+	width: 62px;
+	margin-right: 5px; 
+}
+
+.where_name{
+	width: 106px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* */
+
+/*================ 麵包屑 ================*/
+.breadcrumb{
+	height: 50px;
+	margin-top: 50px;
+	line-height: 50px;
+	color: #666;
+	box-sizing: border-box;
+}
+
+.breadcrumb a{
+	font-size: 14px;
+	color: #666;
+}
+.breadcrumb a:hover,
+.bread_active{
+	padding-bottom: 1px;
+	border-bottom: 1px solid #999;
+}
+
+/*================ end麵包屑 ================*/
+
+/*改地標介紹的標題大小*/
+.pH2{   
+	font-size: 28px;
+	line-height: 40px;
+	position: relative;
+}
+
+#ct_pad{
+ padding: 0 10px;
+ position: relative;
+}
+
+.headerTitle{
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #ccc;
+}
+.w_addNoteBtn{
+ padding-left: 7px;
+ line-height: 31px;
+ border: 2px solid #ff9363;
+ border-radius: 3px;
+ position: absolute;
+ top: 3px;
+ right: 0px;
+ cursor: pointer;
+ font-size: 0;
+}
+
+.w_addNoteBtn a{
+ display: inline-block;
+ vertical-align: middle;
+ color: #F76F32;
+ font-size: 16px;
+ font-weight: bold;
+}
+
+.w_addNoteBtn .icon-plus{
+ font-size: 20px;
+ color: #F76F32;
+ vertical-align: middle;
+ position: relative;
+ top:-1px;
+}
+
+.w_addNoteBtn:hover{
+	border: 2px solid #e43b36;
+}
+.w_addNoteBtn:hover a{
+	color: #e43b36;
+}
+.w_addNoteBtn:hover .icon-plus{
+	color: #e43b36;
+}
+
+/*===========================*/
+
+input[type="radio"]{
+	display: none;
+}
+
+.L_c_branch{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/**********************************/
+
+
+.L_station_check{
+	margin:0 auto;
+	height: 14px;
+	width: 14px;
+/*	border:3px solid #333;*/
+	border-radius: 50%;
+	position: relative;
+	transition: border-color 0.5s 0s ease;
+	background-image: url(../../images/bg2.png);
+}
+
+
+
+#L_station_option1 .L_station_check{
+/*	margin:0 auto;
+	height: 14px;
+	width: 14px;*/
+	border:3px solid #298736;	
+/*	border-radius: 50%;
+	position: relative;
+	transition: border-color 0.5s 0s ease;
+	background-image: url(../../images/bg2.png);*/
+}
+
+
+#L_station_option2 .L_station_check{
+/*	margin:0 auto;
+	height: 14px;
+	width: 14px;*/
+	border:3px solid #CE631B;
+/*	border-radius: 50%;
+	position: relative;
+	transition: border-color 0.5s 0s ease;
+	background-image: url(../../images/bg2.png);*/
+}
+
+
+#L_station_option3 .L_station_check{
+/*	margin:0 auto;
+	height: 14px;
+	width: 14px;*/
+	border:3px solid #075F9B;
+/*	border-radius: 50%;
+	position: relative;
+	transition: border-color 0.5s 0s ease;
+	background-image: url(../../images/bg2.png);*/
+}
+
+#L_station_option4 .L_station_check{
+/*	margin:0 auto;
+	height: 14px;
+	width: 14px;*/
+	border:3px solid #AA3535;
+/*	border-radius: 50%;
+	position: relative;
+	transition: border-color 0.5s 0s ease;
+	background-image: url(../../images/bg2.png);*/
+}
+
+
+/**********************************/
+
+
+.L_station_checkPoint{
+	border-radius: 50%;
+	height: 8px;
+	width: 8px;
+	position: absolute;
+	left: 3px;
+	top:3px;
+	opacity: 0;
+	transition: opacity 0.5s 0s ease;
+}
+.L_station_a{
+	cursor: pointer;
+}
+.L_station_a p{
+	padding-top: 6px;
+	font-size: 16px;
+}
+.L_station_box{
+	float: right;
+	vertical-align: top;		
+	background-image: url(../../images/landmark/testrailway_green.png);
+	background-repeat: no-repeat;
+/*	margin-left: 8px;*/
+}
+
+/*先預設出現內灣*/
+#L_station_option2,#L_station_option3,#L_station_option4{
+	display: none;
+}
+/*	============L_type=================*/	
+.L_card{
+	margin-top: 50px;
+}
+.L_type{
+	height: 30px;
+	width:150px;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	border: 1px solid #333;
+	color:rgba(255,255,255,.9);
+	border-bottom: none;
+	background-color: #333;	
+}
+
+.L_typeImg{
+	display: inline-block;
+	vertical-align: middle;
+}
+.L_typeTxt{	
+	margin-left: -7px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.L_type_shortline{
+	width: 85px;
+	height: 5px;
+	background-color: #333;
+}
+.L_type_line{
+	width:100%;
+	height: 1px;
+	margin-bottom: 15px;
+	background-color: #333;	
+}
+.L_typeTxt i[class^="icon-"]{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 20px;
+} 
+
+.L_typeTxt i.icon-landmark{
+	margin-top: 1px;
+}
+
+/*.L_typeTxt i.icon-landmark+span{
+	margin-right:8px; 
+}*/
+
+.L_typeTxt i.icon-eat{
+	margin-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 2px; 
+}
+
+.L_typeTxt i.icon-eat+span{
+	margin-right:8px; 
+}
+
+.L_typeTxt i.icon-stay{
+	font-size: 18px;
+	padding-top: 3px; 
+	margin-left: 2px; 
+}
+
+.L_typeTxt i.icon-stay+span{
+	margin-left: 3px; 
+}
+
+.L_typeTxt i.icon-activity{
+	font-size: 23px;
+	margin-top: -2px; 
+}
+
+.L_typeTxt i.icon-activity+span{
+	margin-right: 7px; 
+}
+/*	============L_type=================*/
+
+
+/*==========地標卡========*/
+.cardwrapper{
+	font-size: 0;
+}
+.lmcard{
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+	box-sizing: border-box;  
+	vertical-align: top;
+}
+.lmcard:hover .imgbox:before{
+	width: 400px;
+	height: 400px;
+	transition: 1s;
+}
+.imgboxPadding{
+	font-size: 0;
+	padding: 10px 10px 0px 10px;
+	box-sizing: border-box;
+/*	background-color: hsla(40, 60%, 60%, .2); */	
+	background-color: #fff;
+	position: relative;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.3);	
+	transition: .5s;
+}
+.imgboxPadding:hover{
+	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+
+/*.lmcard .imgbox .btn_selecard{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+}*/
+
+.btn_selecard{
+	position: absolute;
+	top: 0px;right: 0px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	background-color: #fff;
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 35px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.btn_image{
+	position: absolute;
+	top:5px;
+	right:5px;
+}
+
+.bigP{
+	color:#333;
+	font-size: 20px;
+	line-height: 2.25rem;
+	text-align: left;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-align: center;
+}
+.smallP{
+	text-align: left;
+	font-size: 1rem;
+	line-height: 1rem;
+	color:#555;
+	padding-bottom:10px ;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.lmcard .imgbox{
+	cursor: pointer;
+	width:100%;
+	height: 0;
+	padding-bottom: 60%;
+	overflow: hidden;		
+	position: relative;
+	box-shadow: 1px 1px 3px rgba(0,0,0, .3);	
+}
+.imgbox img{
+	position: absolute;
+	width:100%;
+	height: auto;
+	left: 0;
+}
+/*==========地標卡========*/
+
+/*==========支線TAB========*/
+.line_tab{
+	position: absolute;
+	width: 70px;
+	height: 25px;
+	top: 25px;
+	left: -7px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	line-height: 25px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+}
+
+.line_tab:before{
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	z-index: -1;
+	width: 0;height: 0;
+	border:7px solid transparent;
+}
+
+.ali_tab{background-color: #aa3535;}
+.ali_tab:before{border-right: 7px solid #aa8686;}
+
+.gigi_tab{background-color: #075f9b;}
+.gigi_tab:before{border-right: 7px solid #6695aa;}
+
+.neiWan_tab{background-color: #298736;}
+.neiWan_tab:before{border-right: 7px solid #758e76;}
+
+.pingC_tab{background-color: #ce631b;}
+.pingC_tab:before{border-right: 7px solid #cca183;}
+/*==========支線TAB========*/
+
+
+/*=============== media ==================*/
+@media screen and (max-width: 479px){
+	.LM_container{
+		width: 100%;
+		margin:0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;		
+	}	
+	.L_station_box{
+		display: none;
+	}
+	.lmcard{
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.breadcrumb{
+        margin-top: 30px;
+    }
+
+}		
+@media screen and (min-width: 480px){
+	.LM_container{
+		width: 100%;
+		margin:0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;		
+	}	
+
+	.L_station_box{
+	 	display: none;
+	}
+	.lmcard{
+		width: 50%;
+		box-sizing: border-box;
+	}
+    .breadcrumb{
+        margin-top: 30px;
+    }	
+}
+
+@media screen and (min-width: 970px){
+	.lmcard{
+		width: 33.333333%;
+		box-sizing: border-box;
+	}
+	.pdays.filterNth{
+	    margin-left: 5px;
+	    display: none;
+	}
+
+	.L_station_box{
+		display: inline-block;
+		font-size: 0;
+		width: 83%;	
+	}	
+	.L_station_a{
+		display: inline-block;
+		width:7.69%;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 1170px){
+	.lc_contframe{
+		top:120px;
+	}
+	.LM_container{
+		width: 1170px;
+		margin:0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;		
+	}
+	.L_station_box{
+		display: inline-block;
+		font-size: 0;
+		width: 86%;	
+	}
+    .breadcrumb{
+        margin-top: 50px;
+    }		
+
+}
+
+
+
+
+
+
+
+/* 點案卡片跑加號 */
+.i_cards_addDot{
+	position: fixed;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #fff;
+	z-index: 99;
+	box-shadow: 0px 0px 3px rgba(255,255,255,.7);
+	/*top: 50%;left: 40%;*/
+}
+
+.i_cards_addDot:after{
+	content: '+';
+	width: 40px;
+	height: 40px;
+	color: rgba(228, 59, 54,0.8);
+	position: absolute;top: 0;left: 0;right: 0;bottom: 0;
+	margin: auto;
+	font-size: 30px;
+	text-align: center;
+	line-height: 40px;
+}
+/* 點案卡片跑加號 */

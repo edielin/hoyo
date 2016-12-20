@@ -1,0 +1,309 @@
+*{
+/*    outline: 1px solid #f00;*/
+}
+/*新增按鈕*/
+.btAdd{
+    color:#fff;
+    background-color: #075f9b;
+    display: inline-block;
+    cursor:pointer;
+    height: 20px;
+    line-height: 20px;
+}
+
+input[type="button"],.btAdd{
+    cursor: pointer;
+    outline: none;
+    border:none;
+    font-weight: 600;
+    color:#fff;
+    background-color: #075f9b;
+}
+
+input[type="button"]:hover,.btAdd:hover{
+    background-color: #aa3535;
+}
+
+.btEdit{
+    display: inline-block;
+    cursor:pointer;
+    line-height: 18px; 
+}
+.btdel{
+    cursor:pointer;
+}
+
+.btSearch{
+    width:100%;
+    text-align: right;
+    margin-bottom:10px; 
+}
+.bnLists{
+  width: 100%;
+}
+
+/*照片處理*/
+.btheadshot{
+    width:120px;
+    text-align: center;
+}
+
+.btheadshot div{
+    margin: auto;
+    width:120px;
+    height:90px;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}/*end*/
+
+/*跳窗背景*/
+.btCup{
+    display: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(0,0,0,.75);
+    z-index: 99;
+}
+.btPopups{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 880px;
+    height: 570px;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}/*end*/
+
+/*跳窗XX*/
+.LM_cancel{
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    background-color: #F76F32;
+    position: absolute;
+    top:-15px;
+    right: -15px;
+    line-height: 30px;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cancelbtn{
+    color: #fff;     
+}
+
+/*標題*/
+.bnTitle{
+    display: inline-block;
+    vertical-align:top;
+}
+.bnTitle input{
+    outline: none;
+    border:none;
+    border-bottom: 5px solid #333;
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: 'Microsoft JhengHei';
+    padding-bottom: 5px;
+}
+/*display:inline-block*/
+.bt-inbl{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 18px;
+}
+/*line*/
+.line{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #333;
+
+}
+/*類型*/
+.bt_title{
+    vertical-align: top;
+    color:#fff;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+    background-color: #333;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.btPopups .td_left{
+    text-align: left;
+}
+
+
+.bt_gray{
+    outline: 3px solid #333;
+}
+/*支線*/
+
+.nContent{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.biRight .btCup2 table tr td {
+    vertical-align: top;
+}
+
+
+
+.textarea{
+    width: 695px;
+    height: 200px;
+    resize: none;
+}
+.NEWS_time{
+    height: 30px;
+}
+.btCup2{
+    display: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(0,0,0,.75);
+    z-index: 99;
+}
+
+
+
+.btPopups2{
+    display: block;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 880px;
+    height: 570px;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}/*end*/
+.LM_cancel2{
+    width: 30px;
+    height: 30px;
+    background-color: #F76F32;
+    position: absolute;
+    top:-15px;
+    right: -15px;
+    line-height: 30px;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btPopups2 .td_left{
+    text-align: left;
+}
+.out_newsimg01{
+    width: 120px;
+    max-height: 90px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    margin-right:30px;
+    border-radius: 5px;
+}
+.out_newsimg01 img{
+    width: 100%;
+    min-width: 120px;
+    height: auto;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.outimg{
+    border-radius: 5px;
+    width: 120px;
+    max-height: 90px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+.outimg img{
+    width: 100%;
+    min-width:120px;
+    height: auto;
+    max-height: 100%;
+    border-radius: 5px;
+}
+.outimg2{
+    max-height: 90px;
+    border-radius: 5px;
+    width: 120px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+.outimg2 img{
+    width: 100%;
+    min-width:120px;
+    height: auto;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+input[type='file']{
+    width: 180px;
+    cursor: pointer;
+}
+
+#NEWS_img2{
+    cursor: pointer;
+    height: 30px;
+    padding-top: 3.5px;
+}
+#updateNew{
+    outline: none;
+    border:none;
+    font-weight: 600;
+    color:#fff;
+    background-color: #075f9b;
+    cursor:pointer;
+}
+#updateNew:hover{
+    background-color: #aa3535;
+}
+
+
+.th_No, #th_memNo {
+    width: 85px !important;
+}
+
+label{
+    vertical-align: top;
+}
+
+#tableImgTr td{
+    height: 90px;
+}
+.btn-margin{
+    margin:0 2px;
+}

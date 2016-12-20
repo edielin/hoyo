@@ -1,0 +1,953 @@
+/*會員專區選項*/
+
+body{
+	background-image:url('../../images/bg2.png');
+}
+
+
+/*=============================*/
+html, body {
+    height: 100%;
+}
+#hoyo_wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+#hoyo_header{
+    position: relative;
+}
+#hoyo_content {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+#hoyo_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*=============================*/
+
+.m_rightBox.ch{ 
+	font-family:'微軟正黑體'; 
+}
+
+#memdata{
+	max-width: 1170px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	margin:50px auto;
+}
+
+.m_leftBox{
+	width: 160px;
+	text-align: center;
+	float: left;
+	font-size: 1rem;
+}
+
+.m_rightBox{
+	width: calc(100% - 190px);
+	float: left;
+	box-sizing: border-box;
+	margin-left: 30px;
+	padding:3px 15px;
+	/*border:3px solid hsla(1, 76%, 65%, .3);*/
+	border-radius: 5px;
+	min-height:410px;
+	line-height: 25px;
+	background-color: rgba(255,255,255,.3);
+	/*box-shadow: 0 0 2px rgba(0,0,0,.3) inset;*/
+}
+.m_rightBox .m_color{
+	color: #333;
+}
+.userImg{
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 5px;
+	overflow: hidden;
+	text-align: center;
+	border:5px solid #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,.3); 
+	margin-bottom:15px;
+	background-color: #fff;
+}
+.userImg img{
+    min-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+.m_nav{
+	/*background-color: #6495ed;*/
+}
+.m_nav ul{
+	width: 100%;
+	position: relative;
+}
+.m_nav ul li{
+	margin: auto;
+	margin-bottom: 5px;
+	line-height:25px;
+	border-radius: 5px;
+	font-size: 18px;
+	text-shadow: 0 0 2px rgba(0,0,0,.2);
+	box-sizing: border-box;
+	background-image: -webkit-linear-gradient( -90deg, hsla(1, 76%, 65%, 1) 0%, hsla(1, 76%, 70%, .9) 100%);
+	background-image: -moz-linear-gradient( -90deg, hsla(1, 76%, 65%, 1) 0%, hsla(1, 76%, 70%, .9) 100%);
+	background-image: -ms-linear-gradient( -90deg, hsla(1, 76%, 65%, 1) 0%, hsla(1, 76%, 70%, .9) 100%);
+}
+.m_nav a{
+	display: block;
+	width:100%;
+	color:#fff;
+	padding:5px 10px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	position: relative;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0);
+}
+
+.m_nav a:after{
+	content: '';
+	position: absolute;
+	bottom: 0;left: 0;right: 0;margin: auto;
+	width: 0%;
+	height: 3px;
+	background-color:  hsla(1, 76%, 65%, 0);
+	transition: .5s;
+}
+
+.m_nav a:hover{
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+
+.m_nav a:hover:after{
+	width: 96%;
+	background-color:  hsla(1, 76%, 65%, 1);
+}
+
+.m_nav a.m_nav_active{
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+
+.m_nav a.m_nav_active:after{
+	width: 96%;
+	background-color:  hsla(1, 76%, 65%, 1);
+}
+
+/*表格資料修改*/
+/*-----------------分頁大標題------------------*/
+.pH2{
+	color: #333;
+	width:100%;
+	font-size: 28px;
+	line-height: 40px;
+	text-align: left;
+	border-bottom:2px solid #ccc;
+	margin-bottom:25px;
+	padding-bottom: 10px; 
+}
+/*-----------------麵包屑-----------------*/
+
+.breadcrumb{
+	height: 50px;
+/*	margin-top: 50px;*/
+	line-height: 50px;
+	color: #666;
+	box-sizing: border-box;
+}
+.breadcrumb .container{
+	padding: 0;
+}
+.breadcrumb a{
+	font-size: 14px;
+	color: #666;
+}
+.breadcrumb a:hover,
+.bread_active{
+	padding-bottom: 1px;
+	border-bottom: 1px solid #999;
+}
+/*================ 麵包屑end ================*/
+
+/*行程清單*/
+.mW_bigBox{
+	position: relative;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 10px;
+	float: left;
+	margin-bottom: 10px; 
+}
+
+.mW_box{
+	position: relative;
+	width: 100%;
+	height: 110px;
+	box-sizing: border-box;
+	background-color: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4);
+	transform-origin: top right;
+	transition: .7s;
+}
+.mW_bigBox .mW_delete,.mW_box .mW_look,.mW_box .mW_edit{
+	position: absolute;
+	font-size:14px;
+	text-align: center; 
+	z-index: 2;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.mW_delete{
+	border: 2px solid #777;
+	background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%; 
+	top: 0px;
+	right: 0px;
+	padding-left: 1.5px;
+	padding-top: 1px;
+	box-sizing: border-box;
+	color: #777;
+}
+
+.mW_delete:hover{
+	border: 2px solid hsla(1, 66%, 65%, 1);
+	color: hsla(1, 66%, 65%, 1);
+}
+
+.mW_delete i{
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.mW_look{
+	border: 2px solid #777;
+	background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	width: 70px;
+	height: 22px;
+	line-height: 22px;
+	border-radius: 5px; 
+	color: #777;
+	bottom: 5px; right: 5px;
+}
+
+.mW_look:hover{
+	border: 2px solid hsla(1, 66%, 65%, 1);
+	color: hsla(1, 66%, 65%, 1);
+}
+
+
+.mW_edit{
+	border: 2px solid #777;
+	background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	width: 97px;
+	height: 22px;
+	line-height: 22px;
+	border-radius: 5px; 
+	color: #777;
+	bottom: 5px; right: 85px;
+}
+
+.mW_edit:hover{
+	border: 2px solid hsla(1, 66%, 65%, 1);
+	color: hsla(1, 66%, 65%, 1);
+}
+
+
+.mW_tabBox{
+	position: relative;
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+
+.mW_imgBox{
+	font: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.mW_imgBox img{
+	display: block;
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+}
+
+.mW_txtBox{
+	padding: 7px 7px 0px 12px;
+	width: 60%;
+	float: left;
+	box-sizing: border-box;
+}
+
+
+.mW_day{
+	font-size: 14px;
+	color: #333;
+}
+
+.mW_day span{
+	font-size: 22px;
+}
+
+.mW_title{
+
+    color: #333;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mW_lorem{
+	color: #333;
+	font-size: 15px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*=====================行程清單end=========================*/
+
+
+/*-------------------plightBox-------------*/
+.plightBox{
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	position: fixed;
+	width:100%;
+	display: none;
+	height: 100%;
+	background-color: rgba(0,0,0,.75);
+	z-index: 9999999;
+	overflow: auto;
+}
+
+.plightBoxAll{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	margin: auto;
+	/*width:100%;*/
+	width:750px;
+	height:450px;
+	display: inline-block;
+	z-index: 101;
+	padding:15px;
+	box-sizing: border-box;
+	opacity:0;
+}
+.plightBoxAll:before{
+	content:'';
+	width: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.pexit{
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color:#fff;
+	z-index: 5;
+	cursor:pointer;
+}
+.pexit i{
+	font-size: 30px;
+}
+.plightBoxContent{
+	width:100%;
+	/*height: 100%;*/
+	padding-bottom:56%;
+	position: relative;
+	background-color: #000;
+	display: inline-block;
+	vertical-align: middle;
+}
+.plightBoxContent:before{
+	content:'';
+	width: 0;
+	height:100%;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.plBImg{
+	width:100%;
+	height:100%;
+	display: block;
+	position: absolute;
+}
+.plBImg div{
+	position: absolute;
+	height:100%;
+	width:100%;
+
+}
+.plBImg div:after{
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+}
+.plBImg div img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height:100%;
+	width:100%;
+}
+.plBTitle{
+	font-size: 1.5rem;
+	color:#fff;
+	position: absolute;
+	z-index: 5;
+	padding: 25px 0 0 35px;
+	box-sizing: border-box;
+	font-family: '微軟正黑體';
+	font-weight: 600;
+}
+.plBTitle h2{
+	border-left:3px solid #fff;
+	padding-left: 10px;
+}
+
+/*lightBox桌機端天數*/
+.pchangeDay{
+	position: absolute;
+	top: 100px;
+	left:50px;
+	height:50px;
+}
+.pchangeDay .dayStyle{
+	width:70px;
+	height:50px;
+	display: inline-block;
+	margin:0 5px;
+	background-color: #075f9b;
+	border-radius: 5px;
+	position: relative;
+	text-align: center;
+	line-height: 50px;
+	color:#fff;
+	cursor: pointer;
+	z-index: 5;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.dayStyle:first-child{
+	background-color: #35BFB3;
+}
+.dayStyle:before{
+	content: 'Day';
+	color:#fff;
+	font-weight: 900;
+	top: 4px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	height:10px;
+	line-height: 10px;
+}
+.dayStyle:after{
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	content:'';
+	border-radius: 2px;
+	background-color: #fff;
+	width:63px;
+	height:27px;
+}
+.pdayNumber{
+	color:#075f9b;
+	font-size: 1rem;
+	font-weight: 900;
+	position: absolute;
+	display: inline-block;
+	height:30px;
+	justify-content: center;
+	line-height: 30px;
+	right: 0;
+	left: 0;
+	bottom:0;
+	margin: auto;
+	z-index: 2;
+}
+.dayStyle:first-child .pdayNumber{
+	color:#35BFB3;
+}
+/*lightBox的dot和line*/
+.plBTour{
+	position: absolute;
+	top:200px;
+	width:100%;
+	font-size: 0;
+	height: 150px;
+	overflow: hidden;
+	font-family: '微軟正黑體';
+}
+.plBdotA{
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 4;
+	width:200%;	
+}
+.plBdotCenter{
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 720px;
+	padding:0 55px;
+	box-sizing: border-box;
+}
+.plBdotCenter:first-child{
+	display: block;
+}
+.plBdot{
+	display: inline-block;
+	vertical-align: middle;
+	border:5px solid #35BFB3;
+	width:30px;
+	height:30px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	position: relative;
+}
+.ptourName{
+	color:#fff;
+	font-size: 1rem;	
+	white-space:nowrap;
+	position: absolute;
+	width:130px;
+	text-align: center;
+	top: 30px;	
+	left: -55px;	
+}
+.plBline{
+	display: inline-block;
+	vertical-align:middle;
+	background-color:#35BFB3;
+	margin-bottom: 50px;
+	height: 5px;
+	width:18%;
+}
+/*---------------------lightBox手機端按鈕-----------------*/
+.plBphoneBtn{
+	display: block;
+	position: absolute;
+	color:#fff;
+	margin:auto;
+	font-family: '微軟正黑體';
+	bottom: 0;
+	left:0;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 5px 5px 0 0 /5px 5px 0 0;
+	background-color: #555;
+}
+.plBphoneBtn .plBphoneBtnAll{
+	font-size: 0;
+	display: block;
+	width:100%;
+}
+.plBphoneBtnAll li{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.65rem;
+	width:33.333333%;
+	box-sizing: border-box;
+}
+.plBphoneBtnAll li+li{
+	border-left:1px solid #bbb;
+}
+.plBphoneBtnAll li i{
+	font-size: 1.25rem;
+	margin-right: 5px;
+}
+.plBphoneBtnAll li a{
+	display: block;
+	text-align: center;
+	justify-content: center;
+	color:#fff;
+	width:100%;
+	line-height: 25px;
+	padding:5px 15px;
+	box-sizing: border-box;
+}
+
+.plBphoneBtnAdd a .icon-heart{
+	color:#E83828;
+}
+
+/*----------------lightBox手機行程--------------------*/
+.plBphoneTour{
+	width:100%;
+	height:50%;
+	padding: 15px 0;
+	box-sizing: border-box;
+	display: block;
+	overflow: auto;
+}
+.plBphoneTour ul{
+	position: relative;
+	height:100%;
+}
+.phonedayTour{
+	position:absolute;
+	top: 0;
+	opacity: 1;
+	display: none;
+	justify-content:flex-start;
+	flex-direction:column;
+	align-items:center;
+	flex-wrap:wrap;
+	/*align-content: center;*/
+	height:100%;
+	width:100%;
+}
+.phonedayTour:first-child{
+	display: inline-flex;
+}
+.phonedayTour>span{
+	margin-right: 160px;
+}
+.plBphoneDot{
+	display:block;
+	width:30px;
+	height:30px;
+	border:5px solid #fff;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color:#fff;
+	position: relative;
+}
+.plBphoneName{
+	position: absolute;
+	top: 0;
+	left: 30px;
+	white-space: nowrap;
+}
+.plBphoneLine{
+	display:block;
+	height:10%;
+	width:5px;
+	background-color: #fff;
+}
+/*phonechangeDay*/
+.phonechangeDay{
+	position: absolute;
+	bottom:0;
+	font-size: 0;
+	width:100%;
+}
+.phonedayStyle{
+	font-size: 1rem;
+	display: inline-block;
+	background-color: #333;
+	color:#fff;
+	width:36px;
+	padding:5px;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius:5px 5px 0 0/5px 5px 0 0;
+	box-shadow: 2px 0 0 1px #000;
+	cursor: pointer;
+}
+/*------------------手機端切換按鈕----------------------*/
+.phonebtn{
+	font-size: 0;
+}
+.phonebtn button{
+	font-size: 1rem;
+	width:50%;
+	padding:5px 1px;
+	box-sizing: border-box;
+	background-color: rgba(255,255,255,.5);
+	border:none;
+}
+.phoneLeft{
+	display: none;
+	position: absolute;
+	left: 0;
+}
+.phoneRight{
+	display: inline-block;
+	position: absolute;
+	right:0;
+}
+/*===================lightBox end===========================*/
+
+
+
+/*-----------------footer-------------------*/
+footer{
+ height: 50px;
+ background-color: #333;
+ text-align:  center;
+ color: rgba(255,255,255, .7);
+ font-size: 0.85rem;
+ line-height: 50px;
+}
+footer::selection{
+ background-color: #333;
+ color: #fff;
+}
+/*-----------------footer end------------*/
+
+
+
+@media screen and (max-width: 479px){
+	.m_leftBox{
+		width: 100%;
+	}
+	.m_rightBox{
+		width:100%;
+		margin:auto;
+	}
+	.m_nav ul{
+		margin-bottom: 20px;
+	}
+	.m_rightBox{
+		min-height: 100px;
+	}
+	/*行程區塊RWD*/
+	.mW_bigBox{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 10px;
+		float: left;
+		margin-bottom: 10px; 
+	}
+
+	.mW_imgBox img{
+		display: block;
+		width: auto;
+		height: 100%;
+	}
+	/*=====.lightBox======*/
+	.plightBoxAll {
+		width:100%;
+		height:100%;
+		max-width: 480px;
+		background-color: #000;
+	}
+	/*phonelightbox*/
+	.plBphoneTour{
+		height:65%;
+	}
+	.plBTitle{
+		padding-top:15px;
+		padding-left: 20px;
+	}
+	.pexit{
+		top: 25px;
+		right: 20px;
+	}
+	.plBBtn{
+		display: none;
+	}
+	.pchangeDay{
+		display: none;
+	}
+	.plBTour{
+		display: none;
+	}
+
+	.breadcrumb{
+		margin-top: -20px;
+	}
+}
+
+@media screen and (min-width: 480px){
+	/*行程區塊RWD*/
+	.mW_bigBox{
+		width: 90%;
+	}
+	/*.lightBox*/
+	.plightBoxAll {
+		bottom: auto;
+	    width: 100%;
+	    height: 600px;
+	    max-width: 480px;
+	    background-color: #000;
+	}
+	.plBTitle{
+		padding-top:15px;
+		padding-left: 20px;
+	}
+	.pexit{
+		top: 25px;
+		right: 20px;
+	}
+	.plBBtn{
+		display: none;
+	}
+	.pchangeDay{
+		display: none;
+	}
+	.plBTour{
+		display: none;
+	}
+	/*手機端phonelightbox*/
+	.plBphoneTour{
+		display: block;
+		height:50%;
+	}
+	.phonedayTour>span{
+		margin-right: 170px;
+	}
+	/*手機端按鈕隱藏*/
+	.plBphoneBtn{
+		display: block;
+	}
+	.breadcrumb{
+		margin-top: 50px;
+	}
+}
+
+@media screen and (min-width: 970px){
+	/*行程區塊RWD*/
+	.mW_bigBox{
+		width: 70%;
+	}
+	/*.lightBox*/
+	.plightBoxAll {
+		bottom:0;
+		width:750px;
+		height:450px;
+		max-width:750px;
+		background-color: transparent;
+	}
+
+	.plBBtn{
+		display: block;
+	}
+	.pchangeDay{
+		display: block;
+	}
+	.plBTour{
+		display: block;
+	}
+	/*手機端行程隱藏*/
+	.plBphoneTour{
+		display: none;
+	}
+	/*手機端按鈕隱藏*/
+	.plBphoneBtn{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1170px){
+	/*行程區塊RWD*/
+	.mW_bigBox{
+		width: 50%;
+		box-sizing: border-box;
+		padding: 10px;
+		float: left;
+		margin-bottom: 10px; 
+	}
+}
+
+.w_addNoteBtn {
+    padding-left: 7px;
+    line-height: 31px;
+    border: 2px solid #ff9363;
+    border-radius: 3px;
+    float: right;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.w_addNoteBtn a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #F76F32;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.w_addNoteBtn .icon-plus {
+    font-size: 20px;
+    color: #F76F32;
+    vertical-align: middle;
+}
+
+
+
+.line_tab{
+	position: absolute;
+	width: 70px;
+	height: 25px;
+	top: 10px;
+	left: -7px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	line-height: 25px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+}
+
+.line_tab:before{
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	z-index: -1;
+	width: 0;height: 0;
+	border:7px solid transparent;
+}
+
+.ali_tab{background-color: #aa3535;}
+.ali_tab:before{border-right: 7px solid #aa8686;}
+
+.gigi_tab{background-color: #075f9b;}
+.gigi_tab:before{border-right: 7px solid #6695aa;}
+
+.neiWan_tab{background-color: #298736;}
+.neiWan_tab:before{border-right: 7px solid #758e76;}
+
+.pingC_tab{background-color: #ce631b;}
+.pingC_tab:before{border-right: 7px solid #cca183;}
